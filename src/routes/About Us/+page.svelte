@@ -1,5 +1,5 @@
 <script>
-import Team from "../../components/team.svelte";
+
 </script>
 <div class="flex justify center shadow-2xl bg-white p-10">
     <div class="absolute bg-orange-600 p-4 w-32">
@@ -18,7 +18,7 @@ import Team from "../../components/team.svelte";
     </div>
 </div>
 
-<Team/>
+
 
 
 

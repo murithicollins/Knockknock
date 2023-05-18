@@ -534,14 +534,15 @@
       <div class="w-full px-4 md:w-1/2 xl:w-1/4">
         <div class="mx-auto mb-10 w-full max-w-[370px]">
           <div class="relative overflow-hidden rounded-lg">
-            <img src="img/Dennis.png"alt="image"class="w-full"/>
+            <img src="img/Dennis.png"alt="image"class="w-"/>
             <div class="absolute bottom-5 left-0 w-full text-center">
-              <div
-                class="relative mx-5 overflow-hidden rounded-lg bg-white py-5 px-3">
-                <h3 class="text-dark text-base font-semibold">
-                  Nikolas Brooten
-                </h3>
-                <p class="text-body-color text-sm">Sales Manager</p>
+                <div class="absolute bottom-5 left-0 w-full text-center">
+                    <div class="relative mx-5 overflow-hidden rounded-lg bg-white py-5 px-3">
+                  <h3 class="text-dark text-base font-semibold">
+                      Joseph Mwaniki
+                  </h3>
+                  <p class="text-body-color text-sm"> Operations Lead</p>
+                  <button type="button" class="text-white bg-gradient-to-br from-cyan-950 to-orange-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2">Linked In</button>
                 <div>
                   <span class="absolute left-0 bottom-0">
                     <svg
