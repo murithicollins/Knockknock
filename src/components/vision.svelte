@@ -1,50 +1,55 @@
-
-<div id="cards mx-10">
-  <figure class="card card--normal">
-    <figcaption class="card__caption">
-      <h1 class="card__name">✓  Strategic Partner</h1>
-      <div class="card__stats">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? 
-          Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.
-        </p>
-      </div>
-    </figcaption>
-  </figure>
-
-  <figure class="card card--water">
-    <figcaption class="card__caption">
-      <h1 class="card__name">✓ Financial support</h1>
-      
-      <table class="card__stats">
-        <div>
-          <p class="p-2">We are seeking financial support to help scale knock knock. 
-            Our goal is to expand knock knock to reach a larger population particularly those of low income 
-            who cannot afford the gadget at the current price.
+<div class="flex justify-center">
+  <h1 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]   dark:text-white">Join Our Vision</h1>
+</div>
+<div id="cards">
+  <div class="flex justify-center my-4">
+    <p>Partner with us in our initiative of helping the Deaf navigate the sound environment. 
+      What we are looking for: </p>
+  </div>
+  <div class="flex justify-center my-8">
+    <figure class="card card--normal">
+      <figcaption class="card__caption">
+        <h1 class="card__name">✓  Strategic Partner</h1>
+        <div class="card__stats">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? 
+            Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.
           </p>
         </div>
-      </table>
-    </figcaption>
-  </figure>
-
-  <figure class="card card--electric">
-    
-
-    <figcaption class="card__caption">
-      <h1 class="card__name">✓ Operation support</h1>
-
+      </figcaption>
+    </figure>
+  
+    <figure class="card card--water">
+      <figcaption class="card__caption">
+        <h1 class="card__name">✓ Financial support</h1>
+        
+        <table class="card__stats">
+          <div>
+            <p class="p-2">We are seeking financial support to help scale knock knock. 
+              Our goal is to expand knock knock to reach a larger population particularly those of low income 
+              who cannot afford the gadget at the current price.
+            </p>
+          </div>
+        </table>
+      </figcaption>
+    </figure>
+  
+    <figure class="card card--electric">
       
-
-      <table class="card__stats">
-        <div>
-          <p class="p-2">We are looking for organizations that could help us subsidize production and operation costs
-            by exploring existing networks. Such includes support in manufacturing, production, and
-            support by providing us with working space to expand and scale the project.
-        </p>
-        </div>
-      </table>
-    </figcaption>
-  </figure>
+  
+      <figcaption class="card__caption">
+        <h1 class="card__name">✓ Operation support</h1>
+        <table class="card__stats">
+          <div>
+            <p class="p-2">We are looking for organizations that could help us subsidize production and operation costs
+              by exploring existing networks. Such includes support in manufacturing, production, and
+              support by providing us with working space to expand and scale the project.
+          </p>
+          </div>
+        </table>
+      </figcaption>
+    </figure>
+  </div>
 </div>
 <style>
 .card {
@@ -52,7 +57,7 @@
   width: 300px;
   /* padding: 1em; */
   border-radius: 15px;
-  margin: 10px;
+  margin: 20px;
   background: #ddd;
   box-shadow: 0px 5px 20px -10px #111111;
   transition: 0.4s;
