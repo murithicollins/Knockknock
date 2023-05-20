@@ -29,7 +29,7 @@
           <a href="/Team" class="text-[#EF6C00]  hover:underline">Team</a>
         </li> 
         <li>
-           <a href="/contact" class="text-[#EF6C00] dark:text-white hover:underline">Contact</a>
+           <a href="/contact us" class="text-[#EF6C00] dark:text-white hover:underline">Contact</a>
         </li>
         </ul>
       </div>
