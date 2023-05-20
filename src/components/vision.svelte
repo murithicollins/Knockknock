@@ -6,7 +6,7 @@
     <p>Partner with us in our initiative of helping the Deaf navigate the sound environment. 
       What we are looking for: </p>
   </div>
-  <div class="flex justify-center my-8">
+  <div class="flex justify-center my-8 flex-col md:flex-row">
     <figure class="card card--normal">
       <figcaption class="card__caption">
         <h1 class="card__name">✓  Strategic Partner</h1>
@@ -53,7 +53,7 @@
 </div>
 <style>
 .card {
-  display: inline-block;
+  /* display: flex; */
   width: 300px;
   /* padding: 1em; */
   border-radius: 15px;
