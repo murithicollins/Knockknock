@@ -28,7 +28,7 @@
             <div class="flex flex-col justify-center ">
                 <!-- links -->
                 <div class="text-[#00394f] text-xl ">
-                    <ul class="flex gap-10">
+                    <ul class="flex gap-16 p-2">
                         <li><a href="/" class="">Home</a></li>
                         <li><a href="/">Product</a></li>
                         <li><a href="/">Team</a></li>
@@ -37,7 +37,7 @@
                 </div>
                 <!-- social img -->
                 <div>
-                    <ul class="flex gap-16">
+                    <ul class="flex gap-16 p-2">
                         <li><img src="img/in.png" alt="" class="h-16"></li>
                         <li><img src="img/tweet.png" alt="" class="h-16"></li>
                         <li><img src="img/tube.png" alt=""class="h-16"></li>
