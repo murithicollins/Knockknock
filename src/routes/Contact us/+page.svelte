@@ -8,14 +8,8 @@
         <div class="relative">
             <div class="mapouter">
                 <div class="gmap_canvas">
-                    <iframe
-                        class="gmap_iframe"
-                        width="100%"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
-                        src="https://maps.google.com/maps?width=771&amp;height=876&amp;hl=en&amp;q= Kalimoni Highway View Plaza (Uchumi)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    <iframe title='' class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"marginwidth="0"
+                    src="https://maps.google.com/maps?width=771&amp;height=876&amp;hl=en&amp;q= Kalimoni Highway View Plaza (Uchumi)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                     />
                     <a href="https://capcuttemplate.org/">Capcut Templates</a>
                 </div>
@@ -26,38 +20,41 @@
                 <!-- container -->
             <div class="md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col m-20">
                 <!-- context -->
-                <div class="p-8">
+                <div class="p-4'">
                         <!-- mail and phone -->
                     <div class="ml-20 my-10">
-                        <div>
-                            <img src="" alt="">
-                            <p>admin.knockknock.co.ke</p>
+                        <div class="flex">
+                            <img src="img/message.png" alt="" class="h-12">
+                            <p class="p-2">admin.knockknock.co.ke</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
+                        <div class="flex"s>
+                            <img src="img/phone.png" class="h-12"alt="">
                             <p>+254 113 873 715</p>
                         </div>
             
                     </div>
-                    <!-- name -->
-                    <div>
-                        <p>Name</p>
-                        <input type="text" name="" id="">
-                    </div>
-                    <!-- email -->
-                    <div>
-                        <p>Email address</p>
-                        <input type="email" name="" id="">
-                    </div>
-                    <!-- message -->
-                    <div>
-                        <p>message</p>
-                        <textarea name="message" id="" cols="25" rows="5"></textarea>
+                    <!-- name message -->
+                    <div class="pl-4">
+                        <!-- name -->
+                        <div>
+                            <p>Name</p>
+                            <input type="text" name="" id="">
+                        </div>
+                        <!-- email -->
+                        <div>
+                            <p>Email address</p>
+                            <input type="email" name="" id="">
+                        </div>
+                        <!-- message -->
+                        <div>
+                            <p>message</p>
+                            <textarea name="message" id="" cols="25" rows="3"></textarea>
+                        </div>
                     </div>
                 </div>
                 <!-- lets talk -->
                 <div class=" ">
-                    <button class="bg-[#EF6C00] w-full h-20 p-4">
+                    <button class="bg-[#EF6C00] w-full h-14 p-2">
                         <h1>Let's talk ! </h1>
                         <img src="" alt="">
                     </button>
