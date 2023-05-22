@@ -28,16 +28,16 @@
             <div class="flex flex-col justify-center ">
                 <!-- links -->
                 <div class="text-[#00394f] text-xl ">
-                    <ul class="flex gap-16 p-2">
+                    <ul class="flex gap-4 md:gap-16 p-2">
                         <li><a href="/" class="">Home</a></li>
-                        <li><a href="/">Product</a></li>
-                        <li><a href="/">Team</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="/Product">Product</a></li>
+                        <li><a href="/Team">Team</a></li>
+                        <li><a href="/Contact us">Contact</a></li>
                     </ul>
                 </div>
                 <!-- social img -->
                 <div>
-                    <ul class="flex gap-16 p-2">
+                    <ul class="flex gap-4 md:gap-16 p-2">
                         <li><img src="img/in.png" alt="" class="h-16"></li>
                         <li><img src="img/tweet.png" alt="" class="h-16"></li>
                         <li><img src="img/tube.png" alt=""class="h-16"></li>

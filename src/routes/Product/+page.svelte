@@ -27,7 +27,7 @@
         </div>
     </div>
     <!-- i bell -->
-    <div class="flex justify-center  bg-[#D9D9D9] p-8">
+    <div class="flex justify-center  bg-[#D9D9D9] p-4 md:p-8">
         <div class="">
             <div class="flex justify-center">
                 <h3>I-BELL</h3>
@@ -76,7 +76,7 @@
 
     </div>
     <!-- baby monitor -->
-    <div class="flex flex-col md:flex-row justify-center  my-8">
+    <div class="flex flex-col md:flex-row justify-center  my-2 md:my-8">
         <div>
             <div>
                 <img src="img/babymo.jpg" alt="">
