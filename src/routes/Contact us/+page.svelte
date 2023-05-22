@@ -18,16 +18,16 @@
         <!-- MAIN CONTAINER -->
         <div class="flex justify-centers md:justify-end">
                 <!-- container -->
-            <div class="md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col m-20">
+            <div class="w-3/5 md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col  m-8 md:m-20">
                 <!-- context -->
                 <div class="p-4'">
                         <!-- mail and phone -->
-                    <div class="ml-20 my-10">
-                        <div class="flex">
-                            <img src="img/message.png" alt="" class="h-12">
+                    <div class="ml-10 md:ml-20 my-4 md:my-10">
+                        <div class="flex flex-col md:flex-row justify-center md:justify-start">
+                            <img src="img/message.png" alt="" class="h-2 md:h-12 w-4 md:w-12">
                             <p class="p-2">admin.knockknock.co.ke</p>
                         </div>
-                        <div class="flex"s>
+                        <div class="flex">
                             <img src="img/phone.png" class="h-12"alt="">
                             <p>+254 113 873 715</p>
                         </div>
@@ -43,7 +43,8 @@
                         <!-- email -->
                         <div>
                             <p>Email address</p>
-                            <input type="email" name="" id="">
+                            <input type="email" name="" id="" class="border-none border-b-2 border-[#EF6C00]">
+                            <div class="border-2 border-[#EF6C00]"></div>
                         </div>
                         <!-- message -->
                         <div>
