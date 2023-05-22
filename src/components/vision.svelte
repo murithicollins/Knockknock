@@ -3,7 +3,7 @@
 </div>
 <div id="cards">
   <div class="flex justify-center my-4">
-    <p>Partner with us in our initiative of helping the Deaf navigate the sound environment. 
+    <p class="md:text-lg text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
       What we are looking for: </p>
   </div>
   <div class="flex justify-center my-8 flex-col md:flex-row">
@@ -11,9 +11,10 @@
       <figcaption class="card__caption">
         <h1 class="card__name">✓  Strategic Partner</h1>
         <div class="card__stats">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Eaque at nobis doloremque odit labore provident unde officiis odio sit sint? 
-            Vitae accusantium praesentium ullam alias aut quod cum perferendis maiores.
+          <p class="">
+            We are looking to partner with organizations that share the same 
+            vision of helping persons with hearing loss to implement the project. 
+            The partnership is dynamic, depending on what the organization can 
           </p>
         </div>
       </figcaption>
@@ -63,7 +64,7 @@
   transition: 0.4s;
 }
 .card__caption {
-  background-color: rgba(255, 255, 255, 0.65);
+  /* background-color: rgba(255, 255, 255, 0.65); */
   padding: 1em;
   position: relative;
   border-radius: 0 0 3px 3px;
