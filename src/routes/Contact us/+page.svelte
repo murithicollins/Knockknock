@@ -18,7 +18,7 @@
         <!-- MAIN CONTAINER -->
         <div class="flex justify-centers md:justify-end">
                 <!-- container -->
-            <div class="w-3/5 md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col  m-8 md:m-20">
+            <div class="w-full md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col  m-8 md:m-20" >
                 <!-- context -->
                 <div class="p-4'">
                         <!-- mail and phone -->
