@@ -18,7 +18,9 @@
             <div class="flex flex-col md:flex-row gap-2 md:gap-4">
                 <div>
                     <input class="rounded-full" type="email" name="" id="" placeholder="Your Email" img >
-                    <img src="img/send.png" alt="" class="h-10 md:-ml-20 p-2">
+                </div>
+                <div>
+                    <img src="img/send.png" alt="" class="h-6 ">
                 </div>
                 <div>
                     <p class="flex justify-center text-[#EF6C00] p-2 text-xl ml-4">subscribe newsletters</p>
@@ -32,7 +34,7 @@
                         <li><a href="/" class="">Home</a></li>
                         <li><a href="/Product">Product</a></li>
                         <li><a href="/Team">Team</a></li>
-                        <li><a href="/Contact us">Contact</a></li>
+                        <li><a href="/">Contact</a></li>
                     </ul>
                 </div>
                 <!-- social img -->
