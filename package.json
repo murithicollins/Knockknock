@@ -44,6 +44,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "dependencies": {
+    "@elasticemail/elasticemail-client": "^4.0.23",
     "flowbite": "^1.6.5"
   }
 }

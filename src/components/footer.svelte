@@ -34,7 +34,7 @@
                         <li><a href="/" class="">Home</a></li>
                         <li><a href="/Product">Product</a></li>
                         <li><a href="/Team">Team</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="/Contact_us">Contact</a></li>
                     </ul>
                 </div>
                 <!-- social img -->
