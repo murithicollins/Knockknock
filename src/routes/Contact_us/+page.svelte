@@ -1,5 +1,27 @@
 <script>
+    // import {browser} from '$app/env'
+    // var btn = document.getElementById('btn');
+    // btn.addEventListener('click',function(e) {
+    //     e.preventDefault()
+    //     var name = document.getElementById('name').ariaValueMax;
+    //     var email = document.getElementById('email').ariaValueMax;
+    //     var message = document.getElementById('message').ariaValueMax;
+    //     var body ='name:' +name+ '<br/> email:'+email + '<br/> message:'+message;
+    //     Email.send({
+    //         SecureToken : "c0c68d00-392e-4776-b18d-37297e709b1c",
+    //         To : '',
+    //         From : "",
+    //         Subject : "This is the subject",
+    //         Body : body
+    //     }).then(
+    //     message => alert(message)
+    //     );
+    // })
 </script>
+<!-- {#if browser}
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+{/if} -->
+
 
 <main>
     <!-- main div -->
@@ -16,7 +38,7 @@
             </div>
         </div>
         <!-- MAIN CONTAINER -->
-        <div class="flex justify-centers md:justify-end">
+        <form method="POST"  class="flex justify-centers md:justify-end">
                 <!-- container -->
             <div class="w-3/5 md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col  m-8 md:m-20">
                 <!-- context -->
@@ -38,13 +60,13 @@
                         <!-- name -->
                         <div>
                             <p>Name</p>
-                            <input type="text" name="" id="">
+                            <input type="text" name="Name" id="">
                         </div>
                         <!-- email -->
                         <div>
                             <p>Email address</p>
-                            <input type="email" name="" id="" class="border-none border-b-2 border-[#EF6C00]">
-                            <div class="border-2 border-[#EF6C00]"></div>
+                            <input type="email" name="Email" id="" class="">
+                            <!-- <div class="border-2 border-[#EF6C00]"></div> -->
                         </div>
                         <!-- message -->
                         <div>
@@ -55,16 +77,17 @@
                 </div>
                 <!-- lets talk -->
                 <div class=" ">
-                    <button class="bg-[#EF6C00] w-full h-14 p-2">
+                    <button class="bg-[#EF6C00] w-full h-14 p-2" type="submit">
                         <h1>Let's talk ! </h1>
                         <img src="" alt="">
                     </button>
-                    
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </main>
+
+
 
 <style>
     .mapouter {
