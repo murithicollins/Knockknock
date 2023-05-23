@@ -9,8 +9,8 @@
             <img src="img/knock.png" alt="">
         </div>
         <!-- context -->
-        <div class="flex items-center justify-center  drop-shadow-md border-2 md:h-72 px-4 ">
-            <div class="space-y-8">
+        <div class="flex items-center justify-center bg-white ">
+            <div class="drop-shadow-md border-2 py-16 px-8 space-y-8 w-full md:w-3/5">
                 <div class="flex justify-center" >
                     <h3 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]  dark:text-white">
                         KNOCK KNOCK
@@ -84,9 +84,11 @@
             <div>
                 <img src="img/babymo.jpg" alt="">
             </div>
-            <div class="drop-shadow-md border-2 py-16 px-8 space-y-8">
-                <div class="flex justify-center">
-                    <h3 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]  dark:text-white">BABY-MONITOR</h3>
+
+            <div class="drop-shadow-md border-2 py-16 px-8 space-y-8 w-full md:w-3/5 mt-0 bg-white md:-mt-8 z-30">
+                <div class="flex justify-center ">
+                    <h3>BABY-MONITOR</h3>
+            
                 </div>
                 <div class="flex justify-center">
                     <p class="text-[#00394F] md:text-lg">
