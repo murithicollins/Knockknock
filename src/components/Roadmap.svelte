@@ -6,7 +6,7 @@
         <h1 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]  dark:text-white">OUR ROADMAP</h1>
     </div>
     <div class="flex justify-center my-4 ">
-        <p class="md:text-lg md:w- text-[#00394F]">
+        <p class="md:text-lg text-[#00394F] w-5/6">
             The vision of knock knock is to build a single platform that convey all kinds of sounds to persons with hearing loss.
             We started by conveying a door knock and our journey is still in progress
         </p>
