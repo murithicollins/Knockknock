@@ -1,16 +1,18 @@
 <script>
 </script>
-<div class="flex justify-center gap-10 shadow-2xl w-full bg-[#D9D9D9] p-10">
+<div class="flex flex-col md:flex-row justify-center gap-10 shadow-2xl w-full bg-[#D9D9D9] p-10">
   <div class="">
-    <img src="img/knock team.png" class="rounded-3xl " alt="" />
+    <img src="img/knock team.png" class="rounded-r-3xl " alt="" />
   </div>
-  <div class="w-1/2 my-32">
-    <h1 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]">About Us</h1>
-    <p class="">
-      Knock knock was started in December 2021 with the goal of building a gadget that could alert a Deaf person when a knock happened on their door. However, with research and study into the target population, we realized that the problem dug deeper than just the inability of Deaf persons to know when someone is at their door.
-        Stories from the Deaf community revealed how crippled this population
-        was by their inability to perceive sounds; which pushed us to think deeper, not just in terms of a product but what impact we, as experienced techies, could make on this community.
-    </p>
+  <div class="flex justify-center items-center w-full md:w-2/4 ">
+    <div>
+      <h1 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]">About Us</h1>
+      <p class="">
+        Knock knock was started in December 2021 with the goal of building a gadget that could alert a Deaf person when a knock happened on their door. However, with research and study into the target population, we realized that the problem dug deeper than just the inability of Deaf persons to know when someone is at their door.
+          Stories from the Deaf community revealed how crippled this population
+          was by their inability to perceive sounds; which pushed us to think deeper, not just in terms of a product but what impact we, as experienced techies, could make on this community.
+      </p>
+    </div>
   </div>
 </div>
 

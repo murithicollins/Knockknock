@@ -57,7 +57,7 @@
             <p class="border-2  border-[#000000]"></p>
         </div>
         <!-- powered by galium -->
-        <div class="flex justify-center">
+        <div class="flex justify-center text-xs">
             <p>©2023 Powered By Gallium Tech.All Rights Reserved.</p>
         </div>
 
