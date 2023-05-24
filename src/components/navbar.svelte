@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
+<nav class="shadow-2xl bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center">
           <img src="img/long logo.png" class="h-12 mr-3" alt="KNOCK KNOCK" />
@@ -37,7 +37,7 @@
             <a href="/Team" class="text-[#EF6C00]  hover:underline">Team</a>
           </li> 
           <li>
-            <a href="/Contact us" class="text-[#EF6C00] dark:text-white hover:underline">Contact</a>
+            <a href="/Contact_us" class="text-[#EF6C00] dark:text-white hover:underline">Contact</a>
           </li>
       </ul>
       </div>
