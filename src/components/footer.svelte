@@ -19,7 +19,7 @@
                 <div>
                     <input class="rounded-full" type="email" name="" id="" placeholder="Your Email" img >
                 </div>
-                <div>
+                <div class="p-4 ">
                     <img src="img/send.png" alt="" class="h-6 ">
                 </div>
                 <div>
@@ -31,10 +31,10 @@
                 <!-- links -->
                 <div class="text-[#00394f] text-xl ">
                     <ul class="flex gap-4 md:gap-16 p-2">
-                        <li><a href="/" class="">Home</a></li>
-                        <li><a href="/Product">Product</a></li>
-                        <li><a href="/Team">Team</a></li>
-                        <li><a href="/Contact_us">Contact</a></li>
+                        <li><a href="/" class="font-primary font-bold">Home</a></li>
+                        <li><a href="/Product"class="font-primary font-bold">Product</a></li>
+                        <li><a href="/Team" class="font-primary font-bold" >Team</a></li>
+                        <li><a href="/Contactus" class="font-primary font-bold ">Contact</a></li>
                     </ul>
                 </div>
                 <!-- social img -->
@@ -64,3 +64,16 @@
     </div>
     
 </footer>
+<style>
+.font-primary {
+      font-family: "Quicksand", sans-serif;
+    }
+.font-secondary {
+      font-family: sans-serif;
+    }
+    
+.font-tertiary {
+      font-family: "Museo Slab", serif;
+    }
+
+</style>

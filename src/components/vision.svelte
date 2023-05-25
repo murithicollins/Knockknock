@@ -1,57 +1,60 @@
-<div class="flex justify-center">
-  <h1 class="mb-4 text-xl font-bold leading-none tracking-tight text-[#EF6C00]   dark:text-white">Join Our Vision</h1>
-</div>
-<div id="cards">
-  <div class="flex justify-center my-4">
-    <p class="md:text-lg text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
-      What we are looking for: </p>
+<main class="py-4 md:py-8 px-4">
+  <div class="flex justify-center  mx-4 md:mx-10 my-4 md:mx-10">
+    <h1 class="mb-4 text-2xl font-primary font-bold text-[#EF6C00]   dark:text-white">Join Our Vision</h1>
   </div>
-  <div class="flex justify-center my-8 flex-col md:flex-row">
-    <figure class="card card--normal">
-      <figcaption class="card__caption">
-        <h1 class="card__name">✓  Strategic Partner</h1>
-        <div class="card__stats">
-          <p class="">
-            We are looking to partner with organizations that share the same 
-            vision of helping persons with hearing loss to implement the project. 
-            The partnership is dynamic, depending on what the organization can 
-          </p>
-        </div>
-      </figcaption>
-    </figure>
-  
-    <figure class="card card--water">
-      <figcaption class="card__caption">
-        <h1 class="card__name">✓ Financial support</h1>
-        
-        <table class="card__stats">
-          <div>
-            <p class="p-2">We are seeking financial support to help scale knock knock. 
-              Our goal is to expand knock knock to reach a larger population particularly those of low income 
-              who cannot afford the gadget at the current price.
+  <div id="cards">
+    <div class="flex justify-center my-4">
+      <p class="text-24 font-secondary text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
+        What we are looking for: </p>
+    </div>
+    <div class="flex justify-center my-8 flex-col md:flex-row  ">
+      <figure class="card card--normal">
+        <figcaption class="card__caption">
+          <h1 class="card__name font-primary text-4xl">✓  Strategic Partner </h1>
+          <p class="border-4 rounded-full border-[#00394F] "></p>
+          <div class="card__stats">
+            <p class="p-2 font-secondary text-24">
+              We are looking to partner with organizations that share the same 
+              vision of helping persons with hearing loss to implement the project. 
+              The partnership is dynamic, depending on what the organization can 
             </p>
           </div>
-        </table>
-      </figcaption>
-    </figure>
-  
-    <figure class="card card--electric">
-      
-  
-      <figcaption class="card__caption">
-        <h1 class="card__name">✓ Operation support</h1>
-        <table class="card__stats">
-          <div>
-            <p class="p-2">We are looking for organizations that could help us subsidize production and operation costs
-              by exploring existing networks. Such includes support in manufacturing, production, and
-              support by providing us with working space to expand and scale the project.
-          </p>
-          </div>
-        </table>
-      </figcaption>
-    </figure>
+        </figcaption>
+      </figure>
+    
+      <figure class="card card--water">
+        <figcaption class="card__caption">
+          <h1 class="card__name font-primary text-4xl">✓ Financial support</h1>
+          <p class="border-4 rounded-full border-[#00394F] "></p>
+          <table class="card__stats">
+            <div>
+              <p class="p-2 font-secondary text-24">We are seeking financial support to help scale knock knock. 
+                Our goal is to expand knock knock to reach a larger population particularly those of low income 
+                who cannot afford the gadget at the current price.
+              </p>
+            </div>
+          </table>
+        </figcaption>
+      </figure>
+    
+      <figure class="card card--electric">
+        <figcaption class="card__caption">
+          <h1 class="card__name font-primary text-4xl">✓ Operation support</h1>
+          <p class="border-4 rounded-full border-[#00394F] "></p>
+          <table class="card__stats">
+            <div>
+              <p class="p-2 font-secondary text-24">We are looking for organizations that could help us subsidize production and operation costs
+                by exploring existing networks. Such includes support in manufacturing, production, and
+                support by providing us with working space to expand and scale the project.
+            </p>
+            </div>
+          </table>
+        </figcaption>
+      </figure>
+    </div>
   </div>
-</div>
+  
+</main>
 <style>
 .card {
   /* display: flex; */
@@ -95,17 +98,28 @@
 
 
 .card:nth-child(1) {
-  transform: translateY(0px) rotate(3deg);
-}
-.card:nth-child(2) {
   transform: translateY(0px) rotate(-4deg);
 }
+.card:nth-child(2) {
+  transform: translateY(0px) rotate(0deg);
+}
 .card:nth-child(3) {
-  transform: translateY(0px) rotate(2deg);
+  transform: translateY(0px) rotate(4deg);
 }
 .card:hover {
   z-index: 5;
   box-shadow: 0px 13px 30px -15px #000000;
   transform: translateY(-10px);
 }
+.font-primary {
+      font-family: "Quicksand", sans-serif;
+    }
+    
+.font-secondary {
+      font-family: sans-serif;
+    }
+    
+.font-tertiary {
+      font-family: "Museo Slab", serif;
+    }
 </style>
