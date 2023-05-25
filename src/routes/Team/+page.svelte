@@ -1,5 +1,6 @@
 <script>
 </script>
+
 <main>
   <!-- about section -->
   <div class="flex justify-center item-center">

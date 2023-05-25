@@ -29,7 +29,7 @@
         </div>
     </div>
     <!-- i bell -->
-    <div class="flex justify-center  bg-[#D9D9D9] p-4 md:p-8">
+    <div class="flex justify-center  bg-[#D9D9D9] p-4 md:p-8 mb-10">
         <div class="">
             <div class="flex justify-center">
                 <h3 class="font-primary  text-4xl font-bold  text-[#EF6C00]  dark:text-white">I-BELL</h3>
@@ -79,27 +79,5 @@
 
     </div>
     <!-- baby monitor -->
-    <div class="flex flex-col md:flex-row justify-center  my-2 md:my-8">
-        <div>
-            <div>
-                <img src="img/babymo.jpg" alt="">
-            </div>
 
-            <div class="drop-shadow-md border-2 py-16 px-8 space-y-8 w-full md:w-3/5 mt-0 bg-white md:-mt-8 z-30">
-                <div class="flex justify-center ">
-                    <h3 class="font-primary  text-2xl font-bold  text-[#EF6C00]">BABY-MONITOR</h3>
-            
-                </div>
-                <div class="flex justify-center">
-                    <p class="text-[#00394F] font-secondary text-24">
-                        We are working with <span class="font-bold underline underline-offset-[4px]">Talking Hands Listening Eyes</span> organization to build a solution for Deaf mothers.
-                    </p>
-                </div>
-                <div class="flex justify-center">
-                    <h3 class="text-[#EF6C00] font-primary text-4xl">Coming soon ...</h3>
-                </div>
-            </div>
-    
-        </div>
-    </div>
 </main>
