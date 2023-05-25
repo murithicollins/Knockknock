@@ -15,12 +15,12 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
         <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 md:mt-0 md:border-0  md:dark:bg-gray-900 dark:border-gray-700">
           <li>
-            <a href="/" class="text-[#EF6C00]  hover:underline" aria-current="page">Home</a>
+            <a href="/" class="text-[#EF6C00] font-primary font-bold hover:underline" aria-current="page">Home</a>
           </li>
 
           <li>
             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-[#EF6C00] rounded hover:underline hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              <a href="/Product">Product</a> 
+              <a href="/Product" class="font-primary font-bold">Product</a> 
               <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
               </svg>
@@ -34,14 +34,28 @@
             </div>
           </li>
           <li>
-            <a href="/Team" class="text-[#EF6C00]  hover:underline">Team</a>
+            <a href="/Team" class="text-[#EF6C00] font-primary font-bold  hover:underline">Team</a>
           </li> 
           <li>
-            <a href="/Contact_us" class="text-[#EF6C00] dark:text-white hover:underline">Contact</a>
+            <a href="/Contact_us" class="text-[#EF6C00] font-primary font-bold dark:text-white hover:underline">Contact</a>
           </li>
       </ul>
       </div>
     </div>
 </nav>
+<style>
+.font-primary {
+      font-family: "Quicksand", sans-serif;
+    }
+.font-secondary {
+      font-family: sans-serif;
+    }
+    
+.font-tertiary {
+      font-family: "Museo Slab", serif;
+    }
+
+
+</style>
                 
                   
