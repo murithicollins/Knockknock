@@ -4,7 +4,7 @@
 <main>
   <!-- about section -->
   <div class="flex justify-center item-center">
-    <div class="flex flex-col md:flex-row justify-center gap-10 shadow-2xl   bg-[#D9D9D9] p-4 md:p-10 md:py-10 md:px-14">
+    <div class="flex flex-col md:flex-row justify-center gap-10 shadow-xl   bg-[#D9D9D9] p-4 md:p-10 md:py-4 md:px-14">
       <div class="">
         <img src="img/knock team.png" class="rounded-r-3xl " alt="" height="500" width="1000"/>
       </div>
@@ -25,9 +25,11 @@
   <div class="container my-24 px-6 mx-auto">
     <!-- Section: Design Block -->
     <section class="mb-32 text-gray-800 text-center">
-      <h2 class="text-2xl font-primary text-[#EF6C00] font-bold mb-32">Team</h2>
-      <div class="grid gap-x-6  md:grid-cols-4">
-        <div class="flex  relative mb-24 md:mb-0">
+      <h2 class="text-2xl font-primary text-[#EF6C00] font-bold mb-8">
+        Team
+      </h2>
+      <div class="grid gap-x-2  md:grid-cols-4">
+        <div class="flex gap-10 relative mb-24 md:mb-0">
           <div class=" flex justify-center">
             <div class="flex justify-center" style="">
               <img src="img/Esther.jpg" class="mx-auto shadow-lg" alt=""
@@ -35,7 +37,7 @@
             </div>
           </div>
           <div class="flex justify-center">
-            <div class="shadow-lg absolute top-3/4 mt-20 inset-x-14 w-60 h-24 block bg-white">
+            <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
               <div class="w-full h-2 bg-[#00394F]"></div>
               <div class="flex justify-center">
                 <div class="">
@@ -57,7 +59,7 @@
             </div>
           </div>
           <div class="flex justify-center">
-            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-10 w-60 h-24 block bg-white">
+            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
               <div class="w-full h-2 bg-[#00394F]"></div>
               <div class="flex justify-center">
                 <div class="">
@@ -79,7 +81,7 @@
             </div>
           </div>
           <div class="flex justify-center">
-            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-10 w-60 h-24 block bg-white">
+            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
               <div class="w-full h-2 bg-[#00394F]"></div>
               <div class="flex justify-center">
                 <div class="">
@@ -96,12 +98,12 @@
         <div class="flex gap-10 relative mb-24 md:mb-0">
           <div class=" flex justify-center">
             <div class="flex justify-center w-full" style="">
-              <img src="img/Dennis.png" class="mx-auto  shadow-lg" alt=""
+              <img src="img/Dennis.png" class="mx-auto  shadow-lg object-fill" alt=""
                 style="" />
             </div>
           </div>
           <div class="flex justify-center">
-            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-10 w-60 h-24 block bg-white">
+            <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
               <div class="w-full h-2 bg-[#00394F]"></div>
               <div class="flex justify-center">
                 <div class="">

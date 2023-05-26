@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="shadow-2xl bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
+<nav class="shadow-xl bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="/" class="flex items-center">
           <img src="img/long logo.png" class="h-12 mr-3" alt="KNOCK KNOCK" />
