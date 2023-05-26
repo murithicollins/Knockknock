@@ -59,14 +59,4 @@
 .image{
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
-.font-primary {
-      font-family: "Quicksand", sans-serif;
-    }
-.font-secondary {
-      font-family: sans-serif;
-    }
-    
-.font-tertiary {
-      font-family: "Museo Slab", serif;
-    }
 </style>
