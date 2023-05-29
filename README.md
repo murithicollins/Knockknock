@@ -56,3 +56,8 @@ To publish your library to [npm](https://www.npmjs.com):
 ```bash
 npm publish
 ```
+
+
+# publish to the main server
+
+scp -r package.json build neverest@143.42.109.187:/home/neverest/knockknock
