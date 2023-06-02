@@ -96,11 +96,11 @@
     </div>
 </main>
 <style>
-    .font-primary {
-          font-family: "Quicksand", sans-serif;
-        }
+.font-primary {
+        font-family: "Quicksand", sans-serif;
+    }
         
-    .font-secondary {
+.font-secondary {
           font-family: sans-serif;
         }
         
@@ -108,5 +108,5 @@
           font-family: "Museo Slab", serif;
         }
     
-    </style>
+ </style>
     

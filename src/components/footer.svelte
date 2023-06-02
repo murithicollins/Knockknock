@@ -1,5 +1,34 @@
 <script>
+//     const emailInput = document.getElementById('emailInput');
+//     const sendButton = document.getElementById('sendButton');
+    
+    
+//     sendButton.addEventListener('click', () => {
 
+//      const email = emailInput.value;
+  
+//      emailInput.value = '';
+//  });
+function handleSubscribeClick() {
+    // Make an API call to send the subscription email
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: 'example@example.com' }),
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('Email sent successfully');
+        } else {
+          console.error('Failed to send email');
+        }
+      })
+      .catch(error => {
+        console.error('Error sending email:', error);
+      });
+  }
 
 </script>
 
@@ -11,16 +40,15 @@
         <!-- img div-->
         <div>
             <img src="img/long logo.png" alt="" class="h-40 m-10" >
+
         </div>
         <!-- context div -->
         <div class=" flex flex-col justify-center space-y-2 md:space-y-4 p-4 ">
             <!-- input -->
-            <div class="flex flex-col md:flex-row gap-2 md:gap-4">
-                <div>
-                    <input class="rounded-full" type="email" name="" id="" placeholder="Your Email" img >
-                </div>
-                <div class="p-4 ">
-                    <img src="img/send.png" alt="" class="h-6 ">
+            <div class="flex flex-col items-center md:flex-row gap-2 md:gap-4">
+                <div class="grid justify-between items-center">
+                    <input class="rounded-full relative inline-block"  type="email" name="" id="emailInput" placeholder="Your Email"/>
+                    <img src="img/send.png" alt="send"  class="h-6 mr-8 md:mr-2 absolute justify-self-end hover:cursor-pointer"  on:click={handleSubscribeClick}/>
                 </div>
                 <div>
                     <p class="flex justify-center text-[#EF6C00] p-2 text-xl ml-4">subscribe newsletters</p>
