@@ -60,19 +60,19 @@
                 <div class="p-4 font-secondary text-24 text-[#00394F] mb-10">
                 <p>Our intention is to implement i-bell to all schools for the Deaf and integrated schools in Kenya as we move to those across Africa. How we can partner :  </p> 
                 </div>
-                <div class="space-y-8">
+                <div class="space-y-8 p-4 md:p-10 my-4 md:my-10 ">
 
                     <div class="flex flex-col md:flex-row  gap-4 ">
-                        <p class="font-secondary font-bold  text-24 text-[#00394F] w-1/5">
+                        <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5">
                             ✓ Implementation partners: 
                         </p>
-                        <p class="font-secondary font-normal text-24 text-[#00394F] w-4/5">  
+                        <p class="font-secondary font-normal text-24 text-[#00394F] md:w-4/5">  
                             we work with organizations and institutions who support us in installing i-bell to one or several schools for the Deaf in kenya
                         </p> 
                     </div>
 
                     <div class="flex flex-col md:flex-row gap-4">
-                        <p class="font-secondary font-bold  text-24 text-[#00394F] w-1/5">
+                        <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5">
                             ✓ Operational partner:  
                         </p>
                         <p class="font-secondary font-normal text-24 text-[#00394F] w-4/5 ">  
@@ -81,8 +81,8 @@
                         </p> 
                     </div>
 
-                    <div class="flex  flex-col md:flex-rowgap-4">
-                        <p class="font-secondary font-bold  text-24 text-[#00394F] w-1/5 ">
+                    <div class="flex  flex-col md:flex-row gap-4">
+                        <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5 ">
                             ✓ Strategic partner: 
                         </p>
                         <p class=" font-secondary font-normal text-24 text-[#00394F] w-4/5">  
