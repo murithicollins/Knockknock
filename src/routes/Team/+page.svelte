@@ -98,7 +98,7 @@
         <div class="flex gap-10 relative mb-24 md:mb-0">
           <div class=" flex justify-center">
             <div class="flex justify-center w-full" style="">
-              <img src="img/Dennis.png" class="mx-auto  shadow-lg object-fill" alt=""
+              <img src="img/Dennis.png" class="mx-auto shadow-lg object-cover" alt=""
                 style="" />
             </div>
           </div>
