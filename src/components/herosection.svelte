@@ -32,7 +32,7 @@
         </div>
       </div>
       <!-- img -->
-      <div class="w-full md:w-1/2">
+      <div class="w-full md:w-1/2 mt-10">
         <img src="img/knock team.png" class="image " alt="" />
       </div>
     </div>
