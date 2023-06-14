@@ -1,6 +1,4 @@
-<script>
 
-</script>
 <main>
     <!-- main div -->
     <div>

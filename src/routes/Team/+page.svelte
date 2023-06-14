@@ -1,5 +1,4 @@
-<script>
-</script>
+
 
 <main>
   <!-- about section -->

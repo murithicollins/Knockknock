@@ -48,7 +48,7 @@ export const actions = {
         // send the email with given options
         const options = {
             from: 'support@pnpradius.com',
-            to: 'kariukidennisde@gmail.com',
+            to: 'murithic2016@gmail.com',
             subject: 'New Contact Form Submission',
             html: emailHtml
         };
