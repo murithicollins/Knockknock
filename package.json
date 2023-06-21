@@ -45,6 +45,7 @@
   "type": "module",
   "dependencies": {
     "@elasticemail/elasticemail-client": "^4.0.23",
+    "@fontsource-variable/quicksand": "^5.0.3",
     "flowbite": "^1.6.5"
   }
 }
