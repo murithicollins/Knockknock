@@ -45,18 +45,18 @@ function handleSubscribeClick() {
                 <div>
                     <img src="img/long logo.png" alt="" class="h-14 my-4" >
                     <div>
-                        <p class="text-xs my-4">
+                        <p class="xl:text-sm my-4">
                             A global innovation hub for assistive and inclusive tech for persons with hearing loss. 
                         </p>
                     </div>
                     <div class="flex items-center gap-4 my-2">
                         <img src="img/phone.png" alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
-                        <a href="tel:+254-113873715" class="font-regular text-xs">Phone: &nbsp +254-113-873-715</a>
+                        <a href="tel:+254-113873715" class="font-regular text-sm">Phone: &nbsp +254-113-873-715</a>
                     </div>
 
                     <div class="flex items-center gap-4 my-2">
                         <img src="img/message.png" alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
-                        <a href="mailto:info@knockknock.co.ke" class="font-regular text-xs">Email: &nbsp info@knockknock.co.ke</a>
+                        <a href="mailto:info@knockknock.co.ke" class="font-regular text-sm">Email: &nbsp info@knockknock.co.ke</a>
                     </div>
 
                 </div>
@@ -67,7 +67,7 @@ function handleSubscribeClick() {
                     <div class="h-1 w-48 bg-[#EF6C00] my-1 rounded-full"/>
 
                     <div class="text-[#00394f] text-xl my-4 underline">
-                        <ul class="flex gap-4 text-xs md:gap-12 p-2 font-primary">
+                        <ul class="flex gap-4 text-sm md:gap-12 p-2 font-primary">
                             <li><a href="/" class="">Home</a></li>
                             <li><a href="/Product"class="">Product</a></li>
                             <li><a href="/Team" class="" >Team</a></li>
@@ -95,7 +95,7 @@ function handleSubscribeClick() {
 
                             <div class="h-1 w-48 bg-[#EF6C00] my-1 rounded-full"/>
 
-                            <p class="text-xs my-4">
+                            <p class="text-sm my-4">
                                 Stay upto date with our latest news and products and awesome technology updates.
                             </p>
                         </div>

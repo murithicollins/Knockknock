@@ -40,7 +40,7 @@
             </div>
 
             <div>
-              <p class="text-xs my-4">
+              <p class="xl:text-sm my-4">
                 We are always excited to work with people who are passionate about making the world a better place for persons with hearing loss.
               </p>
 
