@@ -64,7 +64,7 @@
                         <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5">
                             ✓ Implementation partners: 
                         </p>
-                        <p class="font-secondary font-normal text-24 text-[#00394F] md:w-4/5">  
+                        <p class="font-secondary font-normal text-24 text-[#00394F] w-4/5">  
                             we work with organizations and institutions who support us in installing i-bell to one or several schools for the Deaf in kenya
                         </p> 
                     </div>

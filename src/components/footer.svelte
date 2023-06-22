@@ -16,7 +16,7 @@ function handleSubscribeClick() {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email: 'example@example.com' }),
+      body: JSON.stringify({ email: 'admin.knockknock.co.ke' }),
     })
       .then(response => {
         if (response.ok) {
@@ -48,7 +48,7 @@ function handleSubscribeClick() {
             <div class="flex flex-col items-center md:flex-row gap-2 md:gap-4">
                 <div class="grid justify-between items-center">
                     <input class="rounded-full relative inline-block"  type="email" name="" id="emailInput" placeholder="Your Email"/>
-                    <img src="img/send.png" alt="send"  class="h-6 mr-8 md:mr-2 absolute justify-self-end hover:cursor-pointer"  on:click={handleSubscribeClick}/>
+                    <img src="img/send.png" alt="send"  class="h-6 mr-4 md:mr-2 absolute justify-self-end hover:cursor-pointer"  on:click={handleSubscribeClick} />
                 </div>
                 <div>
                     <p class="flex justify-center text-[#EF6C00] p-2 text-xl ml-4">subscribe newsletters</p>
