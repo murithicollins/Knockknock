@@ -1,82 +1,64 @@
-import {ElasticEmail} from '@elasticemail/elasticemail-client';
+import { render } from 'svelte-email';
+import nodemailer from 'nodemailer';
+import ContactEmail from '$lib/emails/ContactEmail.svelte';
+
+// load function returns an object with data
+export async function load(event) {
+    return {
+        message: event.locals.message
+    }
+}
+
+
 export const actions = {
     default: async (event) => {
-        // TODO log the user in
-        console.log()
-        var knock="E92FE5B08B95DFB9748DF0281CA36F593EFA9F4EBF26BD0FF8FC9FA01AB2F2DAFEE43904549653C4DBB4C61ECCEF48D5";
+        let request = event.request
+        let data = await request.formData()
 
-        let email = {
-            "Recipients": [
-              {
-                "Email": "mail@example.com",
-                "Fields": {
-                  "city": "New York",
-                  "age": "34"
-                }
-              }
-            ],
-            "Content": {
-              "Body": [
-                {
-                  "ContentType": "HTML",
-                  "Content": "string",
-                  "Charset": "string"
-                }
-              ],
-              "Merge": {
-                "city": "New York",
-                "age": "34"
-              },
-              "Attachments": [
-                {
-                  "BinaryContent": "string",
-                  "Name": "string",
-                  "ContentType": "string",
-                  "Size": "100"
-                }
-              ],
-              "Headers": {
-                "city": "New York",
-                "age": "34"
-              },
-              "Postback": "string",
-              "EnvelopeFrom": "John Doe <email@domain.com>",
-              "From": "John Doe <email@domain.com>",
-              "ReplyTo": "John Doe <email@domain.com>",
-              "Subject": "Hello!",
-              "TemplateName": "Template01",
-              "AttachFiles": "[ \"preuploaded.jpg\" ]",
-              "Utm": {
-                "Source": "string",
-                "Medium": "string",
-                "Campaign": "string",
-                "Content": "string"
-              }
-            },
-            "Options": {
-              "TimeOffset": null,
-              "PoolName": "My Custom Pool",
-              "ChannelName": "Channel01",
-              "Encoding": "UserProvided",
-              "TrackOpens": "true",
-              "TrackClicks": "true"
+        // Read the form values
+        let email = data.get('Email')
+        let name = data.get('Name')
+        let message = data.get('message')
+
+        //console.log(`The user submitted: ${email}, ${name}, ${message}`)
+
+
+        // send this as an email with smtp
+        // create smtp transporter
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.sendgrid.net',
+            port: 587,
+            secure: false,
+            auth: {
+                user: 'apikey',
+                pass: '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'
             }
-          }
+        });
 
-        fetch('https://api.elasticemail.com/v4/emails', {
-        method: 'POST',
-        headers: {
-            'Accept': 'application/json, text/plain, */*',
-            'Content-Type': 'application/json',
-            'X-ElasticEmail-ApiKey': knock
+        // render the email template
+        const emailHtml = render({
+            template: ContactEmail,
+            props: {
+                name: name,
+                email: email,
+                message: message
+            }
+        });
 
-        },
-
+        // send the email with given options
+        const options = {
+            from: 'support@pnpradius.com',
+            to: 'murithic2016@gmail.com',
+            subject: 'New Contact Form Submission',
+            html: emailHtml
+        };
         
-        body: JSON.stringify(email)
-        }).then(res => res.json())
-        .then(res => console.log(res));
-    
+        transporter.sendMail(options);
+
+        event.locals.message = `Thank you ${name} for your message. We will get back to you soon.`
+
+        return {
+            status: 200,
+        }
     }
-    
-};
+}
