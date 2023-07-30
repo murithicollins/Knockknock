@@ -1,9 +1,11 @@
 <script>
 
   //import Ruler
-  import Ruler from './Ruler.svelte'
+  import {Ruler} from '$lib/components'
+
   //import Carousel
-  import Carousel from './hero/Carousel.svelte'
+  import {Carousel} from '$lib/components'
+
     
 </script>
 
