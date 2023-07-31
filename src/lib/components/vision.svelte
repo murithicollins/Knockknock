@@ -1,60 +1,64 @@
-<main class="py-4 md:py-8 px-4">
-  <div class="flex justify-center  mx-4 md:mx-10 my-4 md:mx-10">
-    <h1 class="mb-4 text-2xl font-primary font-bold text-[#EF6C00]   dark:text-white">Join Our Vision</h1>
-  </div>
-  <div id="cards">
-    <div class="flex justify-center my-4">
-      <p class="text-24 font-secondary text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
-        What we are looking for: </p>
+<script>
+  import Ruler from "./Ruler.svelte";
+</script>
+<Ruler>
+  <main class="py-4 md:py-8">
+    <div class="flex justify-center my-4 md:mx-10">
+      <h1 class="mb-4 text-2xl font-primary font-bold text-[#EF6C00]   dark:text-white">Join Our Vision</h1>
     </div>
-    <div class="flex justify-center my-8 flex-col md:flex-row  ">
-      <figure class="card card--normal">
-        <figcaption class="card__caption">
-          <h1 class="card__name font-primary text-4xl">✓  Strategic Partner </h1>
-          <p class="border-4 rounded-full border-[#00394F] "></p>
-          <div class="card__stats">
-            <p class="p-2 font-secondary text-24">
-              We are looking to partner with organizations that share the same 
-              vision of helping persons with hearing loss to implement the project. 
-              The partnership is dynamic, depending on what the organization can 
-            </p>
-          </div>
-        </figcaption>
-      </figure>
-    
-      <figure class="card card--water">
-        <figcaption class="card__caption">
-          <h1 class="card__name font-primary text-4xl">✓ Financial support</h1>
-          <p class="border-4 rounded-full border-[#00394F] "></p>
-          <table class="card__stats">
-            <div>
-              <p class="p-2 font-secondary text-24">We are seeking financial support to help scale knock knock. 
-                Our goal is to expand knock knock to reach a larger population particularly those of low income 
-                who cannot afford the gadget at the current price.
+    <div id="cards">
+      <div class="flex justify-center my-4">
+        <p class="text-24 font-secondary text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
+          What we are looking for: </p>
+      </div>
+      <div class="flex justify-center my-8 flex-col md:flex-row  ">
+        <figure class="card card--normal">
+          <figcaption class="card__caption">
+            <h1 class="card__name font-primary text-4xl">✓  Strategic Partner </h1>
+            <p class="border-4 rounded-full border-[#00394F] "></p>
+            <div class="card__stats">
+              <p class="p-2 font-secondary text-24">
+                We are looking to partner with organizations that share the same 
+                vision of helping persons with hearing loss to implement the project. 
+                The partnership is dynamic, depending on what the organization can 
               </p>
             </div>
-          </table>
-        </figcaption>
-      </figure>
-    
-      <figure class="card card--electric">
-        <figcaption class="card__caption">
-          <h1 class="card__name font-primary text-4xl">✓ Operation support</h1>
-          <p class="border-4 rounded-full border-[#00394F] "></p>
-          <table class="card__stats">
-            <div>
-              <p class="p-2 font-secondary text-24">We are looking for organizations that could help us subsidize production and operation costs
-                by exploring existing networks. Such includes support in manufacturing, production, and
-                support by providing us with working space to expand and scale the project.
-            </p>
-            </div>
-          </table>
-        </figcaption>
-      </figure>
+          </figcaption>
+        </figure>
+      
+        <figure class="card card--water">
+          <figcaption class="card__caption">
+            <h1 class="card__name font-primary text-4xl">✓ Financial support</h1>
+            <p class="border-4 rounded-full border-[#00394F] "></p>
+            <table class="card__stats">
+              <div>
+                <p class="p-2 font-secondary text-24">We are seeking financial support to help scale knock knock. 
+                  Our goal is to expand knock knock to reach a larger population particularly those of low income 
+                  who cannot afford the gadget at the current price.
+                </p>
+              </div>
+            </table>
+          </figcaption>
+        </figure>
+      
+        <figure class="card card--electric">
+          <figcaption class="card__caption">
+            <h1 class="card__name font-primary text-4xl">✓ Operation support</h1>
+            <p class="border-4 rounded-full border-[#00394F] "></p>
+            <table class="card__stats">
+              <div>
+                <p class="p-2 font-secondary text-24">We are looking for organizations that could help us subsidize production and operation costs
+                  by exploring existing networks. Such includes support in manufacturing, production, and
+                  support by providing us with working space to expand and scale the project.
+              </p>
+              </div>
+            </table>
+          </figcaption>
+        </figure>
+      </div>
     </div>
-  </div>
-  
-</main>
+  </main>
+</Ruler>
 <style>
 .card {
   /* display: flex; */

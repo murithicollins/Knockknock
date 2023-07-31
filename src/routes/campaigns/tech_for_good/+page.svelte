@@ -5,8 +5,12 @@
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-    import {Donatebutton, Aligner,CampaignFooter} from '$lib/components';
+    import {Donatebutton, Aligner,CampaignFooter,Modal} from '$lib/components';
 
+    let showModal=false;
+    const openModal = () => {
+        showModal=!showModal;
+    }
 
 </script>
 
@@ -33,8 +37,7 @@
 
 <section>
 
-    
-
+    <Modal {showModal} on:click={openModal}/>
     <div class="md:relative">
         <div class="grid grid-cols-1 md:grid-cols-2 md:pb-20">
 
@@ -99,14 +102,52 @@
         <div>
             <Aligner>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Donatebutton text="Buy Luminous tubes: Ksh 500" active="{true}"/>
-                    <Donatebutton text="Buy controller board: Ksh 1000" active="{false}"/>
+                    <div>
+                        <Donatebutton text="Buy Luminous tubes: Ksh 500" active="{true}"/>
+                    </div>
+                    <div>
+                        <Donatebutton text="Buy controller board: Ksh 1000" active="{false}"/>
+                    </div>
                     
-                    <p class="p-6 rounded-lg border-2 border-green-500 w-full text-2xl font-bold">
-                        Ksh <input type="number" name="" id="" placeholder="Customer Amount" class="w-3/4 md:w-full text-green-500  text-lg md:text-2xl outline-none border-none">
-                    </p>
+                    <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
+                        <p class="">Ksh</p>
+                        <div class="flex-grow">
+                            <input type="number" name="" id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
+                        </div>
+                    </div>
                 </div>
             </Aligner>
+        </div>
+
+        <div>
+        
+            <Aligner>
+                <form novalidate="" class="grid grid-cols-1 gap-8 mx-auto rounded-lg md:grid-cols-2 dark:bg-gray-800 dark:text-gray-100">
+                    <div class="flex flex-col">
+                        <div>
+                            <label for="name" class="text-sm font-bold">Full name</label>
+                            <input id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
+                        </div>
+                        <div class="mt-8">
+                            <label for="email" class="text-sm font-bold">Phone Number</label>
+                            <input id="email" type="email" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            <label for="message" class="text-sm font-bold">Good Will Message <span class="text-gray-500">(Optional)</span></label>
+                            <textarea id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
+                        </div> 
+                        <div class="flex justify-end">
+                            <button class="bg-[#1D976C] text-white font-bold py-2 mt-5 px-10 rounded-full" on:click={openModal}>
+                                Button
+                            </button>
+                        </div>
+                    </div> 
+                </form>
+        
+            </Aligner>
+             
         </div>
     </div>   
     <div>
@@ -142,7 +183,7 @@
             </div>
         </Aligner> 
     </div>
-    <div class="text-center ">
+    <div class="text-center m-4 md:m-8 lg:m-16">
         <div class="space-y-8">
             <h1 class="text-5xl font-bold text-[#393D5C] mt-28 md:mt-0">
                 Our Partners
@@ -162,9 +203,7 @@
         </div>
     </div>
 
-    <CampaignFooter>
-        
-    </CampaignFooter>
+    <CampaignFooter/>
+            
     
-
 </section>
