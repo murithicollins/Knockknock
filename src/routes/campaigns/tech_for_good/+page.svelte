@@ -1,7 +1,11 @@
 <script>
     import PlayBtn from '$lib/assets/play.png';
     import HeaderImg from '$lib/assets/header.png';
-    import {Donatebutton, Aligner} from '$lib/components';
+    import SchoolImg from '$lib/assets/school.png';
+    import KnockImg from '$lib/assets/why.png';
+    import TawaLogo  from '$lib/assets/tawa.png';
+    import TinyLogo from '$lib/assets/tiny.png';
+    import {Donatebutton, Aligner,CampaignFooter} from '$lib/components';
 
 
 </script>
@@ -85,7 +89,7 @@
     </div> 
     <div class="space-y-4">
         <div class="space-y-4">
-            <h1 class="text-5xl text-lg text-center">
+            <h1 class="text-5xl font-bold text-[#393D5C] text-center">
                 Your Support is Highly appreciated.
             </h1>
             <p class="text-center space-y-4">
@@ -99,11 +103,68 @@
                     <Donatebutton text="Buy controller board: Ksh 1000" active="{false}"/>
                     
                     <p class="p-6 rounded-lg border-2 border-green-500 w-full text-2xl font-bold">
-                        Ksh <input type="number" name="" id="" placeholder="Customer Amount" class="text-green-500 text-2xl outline-none border-none">
+                        Ksh <input type="number" name="" id="" placeholder="Customer Amount" class="w-3/4 md:w-full text-green-500  text-lg md:text-2xl outline-none border-none">
                     </p>
                 </div>
             </Aligner>
         </div>
     </div>   
+    <div>
+        <Aligner>
+            <div class="md:flex  justify-between md:py-20  ">
+                <div class="space-y-8 w-full md:w-3/4" >
+                    <div>
+                        <h1 class="text-5xl font-bold text-[#393D5C]">
+                            Why are we Doing This ? 
+                        </h1>
+                    </div>
+                    <div class="space-y-8 text-xl text-[#434343] font-medium  leading-loose">
+                        <p>
+                            Treeside Kasarani School for the Deaf uses the ‘conventional’ sound based 
+                            bell system which is not inclusive for the Deaf students in school. The goal of 
+                            the i-bell campaign is to install an inclusive bell to the school to enhance the 
+                            education of these Deaf students and promote their inclusion.  
+                        </p>
+                        <p>
+                            We are also pushing the agenda for using tech4good! 
+                            You can learn more about the campaign <a href="https://drive.google.com/file/d/1BhzAVPRdoXJyLlO80fGgqDbb7rW0OSHc/view?usp=sharing" class="text-[#1D976C] underline underline-offset-1 ">here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div>
+                        <img src={KnockImg} alt="">
+                    </div>
+                    <div class="absolute  top-60 -ml-10 md:-ml-20">
+                        <img src={SchoolImg} alt="">
+                    </div>
+                </div>
+            </div>
+        </Aligner> 
+    </div>
+    <div class="text-center ">
+        <div class="space-y-8">
+            <h1 class="text-5xl font-bold text-[#393D5C] mt-28 md:mt-0">
+                Our Partners
+            </h1>
+            <p class="text-lg text-[#434343] font-medium">
+                This are among the groups and friends that have supported us through the <br> journey. 
+            </p>
+
+        </div>
+        <div class="flex justify-center gap-32">
+            <div>
+                <img src={TawaLogo} alt="">
+            </div>
+            <div>
+                <img src={TinyLogo} alt="">
+            </div>
+        </div>
+    </div>
+
+    <CampaignFooter>
+        
+    </CampaignFooter>
+    
 
 </section>
