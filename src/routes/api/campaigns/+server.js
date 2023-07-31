@@ -35,6 +35,8 @@ export async function POST({ locals: { supabase }, request }) {
     
         // get the donation from the request
         const donation = await request.json()
+
+        console.log(donation)
         
         // get the campaign from supabase
         const { data: campaign, error } = await supabase
@@ -53,42 +55,47 @@ export async function POST({ locals: { supabase }, request }) {
         // {amount,msisdn}
 
         // use fetch to trigger the stk push add the Apikey header
-        const { data: tiny_pesa_response, error: tiny_pesa_error } = await fetch('https://tinypesa.com/api/v1/express/initialize', {
+        const response = await fetch('https://tinypesa.com/api/v1/express/initialize', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Apikey': '5f9b3b0e-2f9a-4f4b-8e0a-5f9b3b0e2f9a'
+                'Apikey': '00tfPtPGvvT'
             },
             body: JSON.stringify({
                 amount: donation.amount,
-                msisdn: donation.msisdn
+                msisdn: donation.phone
             })  
-        }).then(res => res.json())
+        })
 
 
-        console.log(tiny_pesa_response)
+        if (response.status !== 200) return json({ error: 'Error triggering payment' })
+
+        let tiny_data = await response.json()
         
         
 
-        // create the transaction
+        // // create the transaction
         const { data, error: transaction_error } = await supabase
             .from('transactions')
             .insert([
                 {
                     campaign_id: campaign.id,
                     amount: donation.amount,
-                    tiny_pesa_id: tiny_pesa_response.request_id,
+                    tiny_pesa_id: tiny_data.request_id,
                     is_complete: false,
+                    name: donation.name,
+                    message: donation.message,
+                    phone: donation.phone
                 },
             ])
             .single()
             
-        // if there is an error, return the error
+        // // if there is an error, return the error
         if (transaction_error) return json({ error: transaction_error })
 
 
 
-        // return the campaign
+        // // return the campaign
         return json({ data })
     
 }
