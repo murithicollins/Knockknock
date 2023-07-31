@@ -6,8 +6,9 @@
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
     import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
+  import { onMount } from 'svelte';
 
-    let showModal=false;
+    let showModal=true;
     const openModal = () => {
         showModal=!showModal;
     }
@@ -45,8 +46,28 @@
             donate_loading=false
         }).then(data=>{
             // show success message
-            alert('Thank you for donating')
+            // alert('Thank you for donating')
+
+            let trans = data[0]
+
+
             donate_loading=false
+
+            Pusher.logToConsole = true;
+
+            var pusher = new Pusher('50240557a4bfd5073fb1', {
+            cluster: 'ap2'
+            });
+
+            var channel = pusher.subscribe(`transactions-${trans.id}`);
+            channel.bind('transaction_completed', function(data) {
+                console.log(`Transaction completed: ${data.id}`);
+            });
+
+            channel.bind('transaction_failed', function(data) {
+                console.log(`Transaction failed: ${data.id}`);
+            });
+
         })
         .catch(err=>{
             // show error message
@@ -54,6 +75,11 @@
             donate_loading=false
         })
     }
+
+    onMount(()=>{
+        
+        
+    })
 
 </script>
 
