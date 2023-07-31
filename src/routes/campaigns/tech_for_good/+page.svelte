@@ -5,18 +5,12 @@
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-<<<<<<< HEAD
-    import {Donatebutton, Aligner,CampaignFooter,Modal} from '$lib/components';
-=======
     import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 
     let showModal=false;
     const openModal = () => {
         showModal=!showModal;
     }
-<<<<<<< HEAD
-=======
 
     let active_donation = 1;
 
@@ -60,7 +54,6 @@
             donate_loading=false
         })
     }
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 
 </script>
 
@@ -168,8 +161,6 @@
                 </div>
             </Aligner>
         </div>
-<<<<<<< HEAD
-=======
 
         <div>
         
@@ -199,7 +190,6 @@
             </Aligner>
              
         </div>
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
     </div>   
     <div>
         <Aligner>
@@ -257,35 +247,4 @@
     <CampaignFooter/>
             
     
-<<<<<<< HEAD
-    </div>
-    <div>
-        <form novalidate="" class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-            <div class="flex flex-col justify-between">
-                <div>
-                    <label for="name" class="text-sm">Full name</label>
-                    <input id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
-                </div>
-                <div>
-                    <label for="email" class="text-sm">Phone Number</label>
-                    <input id="email" type="email" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
-                </div>
-            </div>
-            <div class="">
-                <div>
-                    <label for="message" class="text-sm">Good Will Message</label>
-                    <textarea id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
-                </div> 
-                <div class="flex justify-end">
-                    <button class="bg-[#1D976C] text-white font-bold py-2 px-10 rounded-full" on:click={openModal}>
-                        Button
-                    </button>
-                </div>
-            </div> 
-        </form>
-
-         
-    </div>
-=======
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 </section>
