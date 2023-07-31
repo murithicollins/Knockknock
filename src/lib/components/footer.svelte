@@ -34,11 +34,8 @@ function handleSubscribeClick() {
 
 </script>
 
-
-
-
-    <footer class="bg-[#D9D9D9] w-full">
-        <Ruler>
+<footer class="bg-[#D9D9D9] w-full">
+    <!-- main div -->
             <!-- main div -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
                 <!-- img div-->
@@ -114,7 +111,7 @@ function handleSubscribeClick() {
                 </div>
                 
             </div>
-        </Ruler>
+        <Ruler/>
         
         <div class="w-full h-8">
             <!-- line -->
@@ -133,7 +130,6 @@ function handleSubscribeClick() {
 
 <style>
 .font-primary {
-      font-family: "Quicksand", sans-serif;
     }
 .font-secondary {
       font-family: sans-serif;

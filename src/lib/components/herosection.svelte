@@ -102,13 +102,12 @@
             </p>
           </div>
           <div>
-            
-          </div>
-        </div>
-      </div>
-      <!-- img -->
+            <button>
+              <a
+                  href="mailto:info@knockknock.co.ke" class="font-tertiary font-bold  text-white  bg-[#00394F] p-4 rounded-full ">Partner With Us
+              </a>
+              
       <div class="w-full md:w-1/2 mt-10">
-        <img src="img/knock team.png" class="image " alt="" />
       </div>
     </div>
 

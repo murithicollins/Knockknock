@@ -8,7 +8,7 @@ export { default as Herosection } from './herosection.svelte';
 export { default as Carousel } from './hero/Carousel.svelte';
 export { default as Donatebutton } from './campaign/donatebutton.svelte';
 export { default as Aligner } from './campaign/aligner.svelte';
-export { default as Modal } from './Modal/Modal.svelte';
+export { default as CampaignFooter} from './campaign/footer.svelte'
 
 
 
