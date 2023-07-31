@@ -1,9 +1,14 @@
 <script>
- import Herosection from "../components/herosection.svelte";
- import Vision from "../components/vision.svelte";
- import Roadmap from "../components/Roadmap.svelte";
+    // redirect to /main
+    import { goto } from '$app/navigation';
+    import { onMount } from 'svelte';
+
+    
+
+    //onmount
+    onMount(() => {
+        goto('/main');
+    })
+
 </script>
-<Herosection/>
-<Roadmap/>
-<Vision/>
 
