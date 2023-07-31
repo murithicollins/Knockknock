@@ -12,6 +12,9 @@ export { default as CampaignFooter} from './campaign/footer.svelte'
 export { default as Modal } from './Modal/modal.svelte';
 
 
+export { default as TriggerDonateButton } from './campaign/triggerdonate.svelte';
+
+
 
 
 

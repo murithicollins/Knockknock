@@ -5,11 +5,54 @@
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-    import {Donatebutton, Aligner,CampaignFooter,Modal} from '$lib/components';
+    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
 
     let showModal=false;
     const openModal = () => {
         showModal=!showModal;
+    }
+
+    let active_donation = 1;
+
+    let donate_form = {
+        amount: 500,
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    }
+
+    let donate_loading = false;
+
+    let donate = () =>{
+
+        console.log(donate_form)
+
+        donate_loading=true
+        // trigger /api/campaings with post method and donate_form
+        fetch('/api/campaigns',{
+            method: 'POST',
+            body: JSON.stringify(donate_form)
+        }).then(res=>{
+            if(res.ok){
+                // show success message
+                return res.json()
+            }else{
+                // throw error
+                throw new Error('Something went wrong')
+                
+            }
+            donate_loading=false
+        }).then(data=>{
+            // show success message
+            alert('Thank you for donating')
+            donate_loading=false
+        })
+        .catch(err=>{
+            // show error message
+            alert('Something went wrong')
+            donate_loading=false
+        })
     }
 
 </script>
@@ -103,16 +146,16 @@
             <Aligner>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div>
-                        <Donatebutton text="Buy Luminous tubes: Ksh 500" active="{true}"/>
+                        <Donatebutton on:clicked={()=>{active_donation=1;donate_form.amount=500}}  text="Buy Luminous tubes: Ksh 500" active="{active_donation==1}"/>
                     </div>
                     <div>
-                        <Donatebutton text="Buy controller board: Ksh 1000" active="{false}"/>
+                        <Donatebutton on:clicked={()=>{active_donation=2;donate_form.amount=1000;}} text="Buy controller board: Ksh 1000" active="{active_donation==2}"/>
                     </div>
                     
                     <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
                         <p class="">Ksh</p>
                         <div class="flex-grow">
-                            <input type="number" name="" id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
+                            <input type="number" name="" value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
                         </div>
                     </div>
                 </div>
@@ -126,22 +169,20 @@
                     <div class="flex flex-col">
                         <div>
                             <label for="name" class="text-sm font-bold">Full name</label>
-                            <input id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
+                            <input bind:value={donate_form.name} id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
                         </div>
                         <div class="mt-8">
-                            <label for="email" class="text-sm font-bold">Phone Number</label>
-                            <input id="email" type="email" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
+                            <label for="phone" class="text-sm font-bold">Phone Number</label>
+                            <input bind:value={donate_form.phone} id="phone" type="text" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
                         </div>
                     </div>
                     <div class="">
                         <div>
                             <label for="message" class="text-sm font-bold">Good Will Message <span class="text-gray-500">(Optional)</span></label>
-                            <textarea id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
+                            <textarea bind:value={donate_form.message} id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
                         </div> 
                         <div class="flex justify-end">
-                            <button class="bg-[#1D976C] text-white font-bold py-2 mt-5 px-10 rounded-full" on:click={openModal}>
-                                Button
-                            </button>
+                            <TriggerDonateButton loading={donate_loading} on:clicked={()=>{donate()}}/>
                         </div>
                     </div> 
                 </form>
