@@ -1,26 +1,7 @@
 <script>
-    // import {browser} from '$app/env'
-    // var btn = document.getElementById('btn');
-    // btn.addEventListener('click',function(e) {
-    //     e.preventDefault()
-    //     var name = document.getElementById('name').ariaValueMax;
-    //     var email = document.getElementById('email').ariaValueMax;
-    //     var message = document.getElementById('message').ariaValueMax;
-    //     var body ='name:' +name+ '<br/> email:'+email + '<br/> message:'+message;
-    //     Email.send({
-    //         SecureToken : "c0c68d00-392e-4776-b18d-37297e709b1c",
-    //         To : '',
-    //         From : "",
-    //         Subject : "This is the subject",
-    //         Body : body
-    //     }).then(
-    //     message => alert(message)
-    //     );
-    // })
+    export let data;
 </script>
-<!-- {#if browser}
-<script src="https://smtpjs.com/v3/smtp.js"> </script>
-{/if} -->
+
 
 
 <main>
@@ -55,6 +36,14 @@
                         </div>
             
                     </div>
+
+                    <div>
+                        {#if data.message}
+                        <p>{data.message}</p>
+                        {/if}
+                    </div>
+
+
                     <!-- name message -->
                     <div class="pl-4">
                         <!-- name -->

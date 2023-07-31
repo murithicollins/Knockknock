@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-node": "^1.2.4",
     "@sveltejs/kit": "^1.5.0",
     "@sveltejs/package": "^2.0.0",
     "autoprefixer": "^10.4.14",
@@ -45,10 +46,10 @@
   "type": "module",
   "dependencies": {
     "@elasticemail/elasticemail-client": "^4.0.23",
-    "flowbite": "^1.6.5",
     "@fontsource-variable/quicksand": "^5.0.3",
     "@supabase/auth-helpers-sveltekit": "^0.10.1",
     "@supabase/supabase-js": "^2.31.0",
+    "flowbite": "^1.6.5",
     "nodemailer": "^6.9.3",
     "svelte-email": "^0.0.4"
   }

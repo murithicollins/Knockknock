@@ -56,13 +56,10 @@ To publish your library to [npm](https://www.npmjs.com):
 ```bash
 npm publish
 ```
-<<<<<<< Updated upstream
-=======
+
 
 
 # publish to the main server
 
-My6YGV2qfKP9YDrf
 
 scp -r package.json build neverest@143.42.109.187:/home/neverest/knockknock
->>>>>>> Stashed changes

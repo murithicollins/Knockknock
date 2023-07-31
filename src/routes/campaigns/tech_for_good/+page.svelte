@@ -104,32 +104,6 @@
                 </div>
             </Aligner>
         </div>
-        <div>
-            <Aligner>
-                 <div>
-                    <h1>Why are we Doing This ?</h1>
-                    <p>
-                        Treeside Kasarani School for the Deaf uses the ‘conventional’ sound based bell system which is not inclusive 
-                        for the Deaf students in school. The goal of the i-bell campaign is to install an inclusive bell to the school
-                        to enhance the education of these Deaf students and promote their inclusion. 
-                    </p>
-                    <p>
-                        We are also pushing the agenda for using tech4good! 
-                        You can learn more about the campaign here.  
-                    </p>
-
-                 </div>
-                 <div>
-                    <div>
-                        <img src={HeaderImg} alt="">
-                    </div>
-                    <div>
-                        <img src= alt="">
-                    </div>
-
-                 </div>
-            </Aligner>
-        </div>
     </div>   
 
 </section>

@@ -111,15 +111,5 @@
   box-shadow: 0px 13px 30px -15px #000000;
   transform: translateY(-10px);
 }
-.font-primary {
-      font-family: "Quicksand", sans-serif;
-    }
-    
-.font-secondary {
-      font-family: sans-serif;
-    }
-    
-.font-tertiary {
-      font-family: "Museo Slab", serif;
-    }
+
 </style>
