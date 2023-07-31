@@ -1,11 +1,6 @@
 <script>
-  import "../app.postcss";
-  import Navbar from "../components/navbar.svelte";
-  import Footer from "../components/footer.svelte";
+    import "../app.postcss";
+
 </script>
 
-<Navbar />
-
 <slot />
-
-<Footer />

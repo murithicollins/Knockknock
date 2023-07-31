@@ -1,4 +1,11 @@
 <script>
+
+  //import Ruler
+  import {Ruler} from '$lib/components'
+
+  //import Carousel
+  import {Carousel} from '$lib/components'
+
     
 </script>
 
