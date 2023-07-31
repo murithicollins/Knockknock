@@ -1,21 +1,8 @@
 <script>
-<<<<<<< HEAD
-//     const emailInput = document.getElementById('emailInput');
-//     const sendButton = document.getElementById('sendButton');
-    
-    
-//     sendButton.addEventListener('click', () => {
-
-//      const email = emailInput.value;
-  
-//      emailInput.value = '';
-//  });
-=======
 
 // import the ruler component
 import Ruler from './Ruler.svelte';
 
->>>>>>> f84e3a9d9ef48c6f046e996f9cca8eb9cf385503
 function handleSubscribeClick() {
     // Make an API call to send the subscription email
     fetch('/api/subscribe', {
@@ -37,8 +24,6 @@ function handleSubscribeClick() {
       });
   }
 
-<<<<<<< HEAD
-=======
   let socials = [
     {img: 'img/in.png', alt: 'linkedin'},
     {img: 'img/tweet.png', alt: 'twitter'},
@@ -47,74 +32,10 @@ function handleSubscribeClick() {
   ]
 
 
->>>>>>> f84e3a9d9ef48c6f046e996f9cca8eb9cf385503
 </script>
 
-
-
-<<<<<<< HEAD
 <footer class="bg-[#D9D9D9] w-full">
     <!-- main div -->
-    <div class="flex flex-col md:flex-row  justify-center gap-10">
-        <!-- img div-->
-        <div>
-            <img src="img/long logo.png" alt="" class="h-40 m-10" >
-
-        </div>
-        <!-- context div -->
-        <div class=" flex flex-col justify-center space-y-2 md:space-y-4 p-4 ">
-            <!-- input -->
-            <div class="flex flex-col items-center md:flex-row gap-2 md:gap-4">
-                <div class="grid justify-between items-center">
-                    <input class="rounded-full relative inline-block"  type="email" name="" id="emailInput" placeholder="Your Email"/>
-                    <img src="img/send.png" alt="send"  class="h-6 mr-4 md:mr-2 absolute justify-self-end hover:cursor-pointer"  on:click={handleSubscribeClick} />
-                </div>
-                <div>
-                    <p class="flex justify-center text-[#EF6C00] p-2 text-xl ml-4">subscribe newsletters</p>
-                </div>
-            </div>
-            <!-- dd -->
-            <div class="flex flex-col justify-center ">
-                <!-- links -->
-                <div class="text-[#00394f] text-xl ">
-                    <ul class="flex gap-4 md:gap-16 p-2">
-                        <li><a href="/" class="font-primary font-bold">Home</a></li>
-                        <li><a href="/Product"class="font-primary font-bold">Product</a></li>
-                        <li><a href="/Team" class="font-primary font-bold" >Team</a></li>
-                        <li><a href="/Contactus" class="font-primary font-bold ">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- social img -->
-                <div>
-                    <ul class="flex gap-4 md:gap-16 p-2">
-                        <li><img src="img/in.png" alt="" class="h-16"></li>
-                        <li><img src="img/tweet.png" alt="" class="h-16"></li>
-                        <li><img src="img/tube.png" alt=""class="h-16"></li>
-                        <li><img src="img/insta.png" alt=""class="h-16"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- copy info -->
-    <div class="w-full h-8">
-        <!-- line -->
-        <div>
-            <p class="border-2  border-[#000000]"></p>
-        </div>
-        <!-- powered by galium -->
-        <div class="flex justify-center text-xs">
-            <p>©2023 Powered By Gallium Tech.All Rights Reserved.</p>
-        </div>
-
-    </div>
-    
-</footer>
-=======
-
-    <footer class="bg-[#D9D9D9] w-full">
-        <Ruler>
             <!-- main div -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
                 <!-- img div-->
@@ -190,7 +111,7 @@ function handleSubscribeClick() {
                 </div>
                 
             </div>
-        </Ruler>
+        <Ruler/>
         
         <div class="w-full h-8">
             <!-- line -->
@@ -207,10 +128,8 @@ function handleSubscribeClick() {
         
     </footer>
 
->>>>>>> f84e3a9d9ef48c6f046e996f9cca8eb9cf385503
 <style>
 .font-primary {
-      font-family: "Quicksand", sans-serif;
     }
 .font-secondary {
       font-family: sans-serif;
