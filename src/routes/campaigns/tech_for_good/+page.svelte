@@ -1,20 +1,17 @@
 <script>
     import PlayBtn from '$lib/assets/play.png';
     import HeaderImg from '$lib/assets/header.png';
-<<<<<<< HEAD
     import {Donatebutton, Aligner, Modal} from '$lib/components';
     let showModal=false;
     const openModal = () => {
         showModal=!showModal;
     }
-=======
     import SchoolImg from '$lib/assets/school.png';
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-    import {Donatebutton, Aligner,CampaignFooter} from '$lib/components';
+    import {CampaignFooter} from '$lib/components';
 
->>>>>>> 4f1d31e656194c4a4c28f08774b4c0c961379f39
 
 </script>
 
@@ -115,33 +112,6 @@
                 </div>
             </Aligner>
         </div>
-<<<<<<< HEAD
-    </div>
-    <div>
-        <form novalidate="" class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
-            <div class="flex flex-col justify-between">
-                <div>
-                    <label for="name" class="text-sm">Full name</label>
-                    <input id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
-                </div>
-                <div>
-                    <label for="email" class="text-sm">Phone Number</label>
-                    <input id="email" type="email" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
-                </div>
-            </div>
-            <div class="">
-                <div>
-                    <label for="message" class="text-sm">Good Will Message</label>
-                    <textarea id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
-                </div> 
-                <div class="flex justify-end">
-                    <button class="bg-[#1D976C] text-white font-bold py-2 px-10 rounded-full" on:click={openModal}>
-                        Button
-                    </button>
-                </div>
-            </div> 
-        </form>
-=======
     </div>   
     <div>
         <Aligner>
@@ -200,8 +170,7 @@
         
     </CampaignFooter>
     
->>>>>>> 4f1d31e656194c4a4c28f08774b4c0c961379f39
 
          
-    </div>
+
 </section>
