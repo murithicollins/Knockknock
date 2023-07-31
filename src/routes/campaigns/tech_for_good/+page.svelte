@@ -1,17 +1,72 @@
 <script>
     import PlayBtn from '$lib/assets/play.png';
     import HeaderImg from '$lib/assets/header.png';
+<<<<<<< HEAD
     import {Donatebutton, Aligner, Modal} from '$lib/components';
     let showModal=false;
     const openModal = () => {
         showModal=!showModal;
     }
+=======
+>>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
     import SchoolImg from '$lib/assets/school.png';
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
+<<<<<<< HEAD
     import {CampaignFooter} from '$lib/components';
 
+=======
+    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
+
+    let showModal=false;
+    const openModal = () => {
+        showModal=!showModal;
+    }
+
+    let active_donation = 1;
+
+    let donate_form = {
+        amount: 500,
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    }
+
+    let donate_loading = false;
+
+    let donate = () =>{
+
+        console.log(donate_form)
+
+        donate_loading=true
+        // trigger /api/campaings with post method and donate_form
+        fetch('/api/campaigns',{
+            method: 'POST',
+            body: JSON.stringify(donate_form)
+        }).then(res=>{
+            if(res.ok){
+                // show success message
+                return res.json()
+            }else{
+                // throw error
+                throw new Error('Something went wrong')
+                
+            }
+            donate_loading=false
+        }).then(data=>{
+            // show success message
+            alert('Thank you for donating')
+            donate_loading=false
+        })
+        .catch(err=>{
+            // show error message
+            alert('Something went wrong')
+            donate_loading=false
+        })
+    }
+>>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 
 </script>
 
@@ -103,15 +158,54 @@
         <div>
             <Aligner>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <Donatebutton text="Buy Luminous tubes: Ksh 500" active="{true}"/>
-                    <Donatebutton text="Buy controller board: Ksh 1000" active="{false}"/>
+                    <div>
+                        <Donatebutton on:clicked={()=>{active_donation=1;donate_form.amount=500}}  text="Buy Luminous tubes: Ksh 500" active="{active_donation==1}"/>
+                    </div>
+                    <div>
+                        <Donatebutton on:clicked={()=>{active_donation=2;donate_form.amount=1000;}} text="Buy controller board: Ksh 1000" active="{active_donation==2}"/>
+                    </div>
                     
-                    <p class="p-6 rounded-lg border-2 border-green-500 w-full text-2xl font-bold">
-                        Ksh <input type="number" name="" id="" placeholder="Customer Amount" class="w-3/4 md:w-full text-green-500  text-lg md:text-2xl outline-none border-none">
-                    </p>
+                    <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
+                        <p class="">Ksh</p>
+                        <div class="flex-grow">
+                            <input type="number" name="" value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
+                        </div>
+                    </div>
                 </div>
             </Aligner>
         </div>
+<<<<<<< HEAD
+=======
+
+        <div>
+        
+            <Aligner>
+                <form novalidate="" class="grid grid-cols-1 gap-8 mx-auto rounded-lg md:grid-cols-2 dark:bg-gray-800 dark:text-gray-100">
+                    <div class="flex flex-col">
+                        <div>
+                            <label for="name" class="text-sm font-bold">Full name</label>
+                            <input bind:value={donate_form.name} id="name" type="text" placeholder="Enter Full Name" class="w-full p-3 rounded dark:bg-gray-800">
+                        </div>
+                        <div class="mt-8">
+                            <label for="phone" class="text-sm font-bold">Phone Number</label>
+                            <input bind:value={donate_form.phone} id="phone" type="text" placeholder="Enter Phone No" class="w-full p-3 rounded dark:bg-gray-800">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            <label for="message" class="text-sm font-bold">Good Will Message <span class="text-gray-500">(Optional)</span></label>
+                            <textarea bind:value={donate_form.message} id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
+                        </div> 
+                        <div class="flex justify-end">
+                            <TriggerDonateButton loading={donate_loading} on:clicked={()=>{donate()}}/>
+                        </div>
+                    </div> 
+                </form>
+        
+            </Aligner>
+             
+        </div>
+>>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
     </div>   
     <div>
         <Aligner>
@@ -146,7 +240,7 @@
             </div>
         </Aligner> 
     </div>
-    <div class="text-center ">
+    <div class="text-center m-4 md:m-8 lg:m-16">
         <div class="space-y-8">
             <h1 class="text-5xl font-bold text-[#393D5C] mt-28 md:mt-0">
                 Our Partners
@@ -166,11 +260,13 @@
         </div>
     </div>
 
-    <CampaignFooter>
-        
-    </CampaignFooter>
+    <CampaignFooter/>
+            
     
+<<<<<<< HEAD
 
          
 
+=======
+>>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 </section>
