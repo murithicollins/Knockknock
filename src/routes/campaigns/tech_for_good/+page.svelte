@@ -9,7 +9,7 @@
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
 
-    let showModal=true;
+    let showModal=false;
     let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
@@ -87,12 +87,20 @@
     }
 
     let days_remaining=0;
+    let fomated_target = 0;
+    let campaign_progress = 0;
     $:{
         if(campaign_data.campaign.expiry_date){
             let expiry = new Date(campaign_data.campaign.expiry_date)
             let today = new Date()
             let diff = expiry.getTime() - today.getTime()
             days_remaining = Math.ceil(diff / (1000 * 3600 * 24))
+        }
+        if(campaign_data.campaign.target){
+            fomated_target = campaign_data.campaign.target.toLocaleString()
+        }
+        if(campaign_data.campaign.target && campaign_data.total_donated){
+            campaign_progress = Math.ceil((campaign_data.total_donated/campaign_data.campaign.target)*100)
         }
     }
 
@@ -132,7 +140,7 @@
     }
 
     .gradient-bg{
-        background: linear-gradient(90deg, #1D976C 0%, #93F9B9 91.76%);
+        background: linear-gradient(90deg, #1D976C 0%, #4cc779 91.76%);
     }
     
     .faded{
@@ -152,12 +160,20 @@
             <div class="gradient-bg header-col flex items-center justify-center">
                 
                 <div class="w-4/5">
-                    <h1 class="text-lg md:text-5xl text-white font-bold">
-                        #tech4good i-bell <br> 30-day campaign
+                    <h1 class="text-2xl md:text-5xl text-white font-bold">
+                        #tech4good Inclusive bell (i-bell) <br> 30-day campaign
                     </h1>
                     <p class="text-white leading-loose my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus voluptatibus exercitationem quia doloribus quidem odio adipisci doloremque soluta, est architecto id, vero placeat odit unde fugit eos eligendi non!
+
+                        Let's join hands and push forward tech innovations for the Deaf! In view of September, Deaf awareness month, i-bell intends to bring an inclusive bell system to Treeside Kasarani School for the Deaf!! We can all be pioneers of inclusive learning by supporting this initiative. 
+
+                        
+
+
                     </p>
+                    <p class="text-xl mb-5 md:text-2xl text-white font-bold">
+                        Amount we are raising: Ksh. 425, 531.60
+                    </p>    
                 </div>
             </div>
     
@@ -174,8 +190,8 @@
                 <div class=" py-5 bg-white  z-10 shadow-lg rounded-lg p-4">
 
                     <!---progress bar-->
-                    <div class="w-full bg-gray-200 rounded-full">
-                        <div class="w-1/2 bg-green-500 rounded-full py-1"></div>
+                    <div class="w-full bg-gray-200 rounded-full mt-4 md:mt-8">
+                        <div class="bg-green-500 rounded-full py-1" style="width:{campaign_progress}%"></div>
                     </div>
     
                     <div class="grid grid-cols-1 md:grid-cols-4 text-green-500">
@@ -189,7 +205,7 @@
                             <h1 class="text-lg font-bold">{days_remaining} Days left</h1>
                         </div>
                         <div class="py-1">
-                            <h1 class="text-lg font-bold">Goal Ksh {campaign_data.campaign.target}</h1>
+                            <h1 class="text-lg font-bold">Goal Ksh {fomated_target}</h1>
                         </div>
                     </div>
     
@@ -198,23 +214,26 @@
             </Aligner>
         </div>
     </div> 
-    <div class="space-y-4">
-        <div class="space-y-4">
-            <h1 class="text-5xl font-bold text-[#393D5C] text-center">
-                Your Support is Highly appreciated.
-            </h1>
-            <p class="text-center space-y-4">
-                 Together, we can make a difference. Please support the campaign and <br> spread the word. Choose an option below on how to donate.
-            </p>
-        </div>
-        <div>
+    <div class="">
+        <Aligner>
+            <div class="">
+                <h1 class="text-2xl my-4 md:my-12 md:text-5xl font-bold text-[#393D5C] text-center">
+                    Your Support is Highly appreciated.
+                </h1>
+                <p class="text-center my-4 md:my-12">
+                     Together, we can make a difference. Please support the campaign and <br> spread the word. Choose an option below on how to donate.
+                </p>
+            </div>
+        </Aligner>
+        
+        <div class="my-24 md:my-12">
             <Aligner>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-24 ">
                     <div>
-                        <Donatebutton on:clicked={()=>{active_donation=1;donate_form.amount=500}}  text="Buy Luminous tubes: Ksh 500" active="{active_donation==1}"/>
+                        <Donatebutton on:clicked={()=>{active_donation=1;donate_form.amount=500}}  text="Donate Luminous tubes: Ksh 500" active="{active_donation==1}"/>
                     </div>
                     <div>
-                        <Donatebutton on:clicked={()=>{active_donation=2;donate_form.amount=1000;}} text="Buy controller board: Ksh 1000" active="{active_donation==2}"/>
+                        <Donatebutton on:clicked={()=>{active_donation=2;donate_form.amount=1000;}} text="Donate controller board: Ksh 1000" active="{active_donation==2}"/>
                     </div>
                     
                     <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
