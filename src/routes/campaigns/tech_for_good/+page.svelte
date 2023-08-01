@@ -5,9 +5,12 @@
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
+    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
+  import { onMount } from 'svelte';
+  import { get } from 'svelte/store';
 
     let showModal=false;
+    let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
     }
@@ -23,12 +26,14 @@
     }
 
     let donate_loading = false;
+    let donate_mode = "default";
 
     let donate = () =>{
 
         console.log(donate_form)
 
         donate_loading=true
+        donate_mode = "pending"
         // trigger /api/campaings with post method and donate_form
         fetch('/api/campaigns',{
             method: 'POST',
@@ -45,15 +50,73 @@
             donate_loading=false
         }).then(data=>{
             // show success message
-            alert('Thank you for donating')
-            donate_loading=false
+            // alert('Thank you for donating')
+
+            let trans = data[0]
+
+            Pusher.logToConsole = true;
+
+            var pusher = new Pusher('50240557a4bfd5073fb1', {
+            cluster: 'ap2'
+            });
+
+            var channel = pusher.subscribe(`transactions-${trans.id}`);
+            channel.bind('transaction_completed', function(data) {
+                console.log(`Transaction completed: ${data.id}`);
+                donate_loading=false
+                donate_mode = "default"
+                openModal()
+            });
+
+            channel.bind('transaction_failed', function(data) {
+                console.log(`Transaction failed: ${data.id}`);
+                donate_loading=false
+                donate_mode = "error"
+            });
+
         })
         .catch(err=>{
             // show error message
             alert('Something went wrong')
-            donate_loading=false
+
         })
     }
+
+    let campaign_data={
+        campaign:{}
+    }
+
+    let days_remaining=0;
+    $:{
+        if(campaign_data.campaign.expiry_date){
+            let expiry = new Date(campaign_data.campaign.expiry_date)
+            let today = new Date()
+            let diff = expiry.getTime() - today.getTime()
+            days_remaining = Math.ceil(diff / (1000 * 3600 * 24))
+        }
+    }
+
+    let getCampaignInformation = () =>{
+        fetch('/api/campaigns')
+        .then(res=>{
+            if(res.ok){
+                return res.json()
+            }else{
+                throw new Error('Something went wrong')
+            }
+        })
+        .then(data=>{
+            console.log(data)
+            campaign_data = data
+        })
+        .catch(err=>{
+            alert('Something went wrong')
+        })
+    }
+
+    onMount(()=>{
+        getCampaignInformation()
+    })
 
 </script>
 
@@ -80,7 +143,9 @@
 
 <section>
 
-    <Modal {showModal} on:click={openModal}/>
+    <Modal {showModal} donation={donate_form} on:closed={()=>{showModal=false}}/>
+
+    <VideoModal show={video_modal} on:closed={()=>{video_modal=false}}/>
     <div class="md:relative">
         <div class="grid grid-cols-1 md:grid-cols-2 md:pb-20">
 
@@ -98,7 +163,7 @@
     
             <div class="relative header-col-2" style="background-image:url('{HeaderImg}')">
                 <div class="absolute top-0 bottom-0 left-0 right-0 faded flex items-center justify-center">
-                    <img class="w-12 h-12" src={PlayBtn}>
+                    <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
                 </div>
             </div>
     
@@ -115,16 +180,16 @@
     
                     <div class="grid grid-cols-1 md:grid-cols-4 text-green-500">
                         <div class="py-1">
-                            <h1 class="text-lg font-bold">Ksh 100 Raised</h1>
+                            <h1 class="text-lg font-bold">Ksh {campaign_data.total_donated} Raised</h1>
                         </div>
                         <div class="py-1">
-                            <h1 class="text-lg font-bold">10 Donations</h1>
+                            <h1 class="text-lg font-bold">{campaign_data.total_transactions} Donations</h1>
                         </div>
                         <div class="py-1">
-                            <h1 class="text-lg font-bold">30 Days left</h1>
+                            <h1 class="text-lg font-bold">{days_remaining} Days left</h1>
                         </div>
                         <div class="py-1">
-                            <h1 class="text-lg font-bold">Goal Ksh 435,345</h1>
+                            <h1 class="text-lg font-bold">Goal Ksh {campaign_data.campaign.target}</h1>
                         </div>
                     </div>
     
@@ -155,7 +220,7 @@
                     <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
                         <p class="">Ksh</p>
                         <div class="flex-grow">
-                            <input on:input={(e)=>{active_donation=3;donate_form.amount=e.target.value }} type="number" name="" value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
+                            <input type="number" name="" bind:value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
                         </div>
                     </div>
                 </div>
@@ -182,7 +247,7 @@
                             <textarea bind:value={donate_form.message} id="message" placeholder="Good Will Message" rows="3" class="w-full h-40 p-3 rounded dark:bg-gray-800"></textarea>
                         </div> 
                         <div class="flex justify-end">
-                            <TriggerDonateButton loading={donate_loading} on:clicked={()=>{donate()}}/>
+                            <TriggerDonateButton mode={donate_mode} loading={donate_loading} on:clicked={()=>{donate()}}/>
                         </div>
                     </div> 
                 </form>
@@ -220,6 +285,12 @@
                     <div class="absolute  top-60 -ml-10 md:-ml-20">
                         <img src={SchoolImg} alt="">
                     </div>
+
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
+
+                    </div>
+
                 </div>
             </div>
         </Aligner> 
