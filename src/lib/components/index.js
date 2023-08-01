@@ -14,6 +14,9 @@ export { default as Modal } from './Modal/modal.svelte';
 
 export { default as TriggerDonateButton } from './campaign/triggerdonate.svelte';
 
+export { default as VideoModal } from './campaign/videomodal.svelte';
+
+
 
 
 

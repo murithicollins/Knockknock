@@ -24,7 +24,13 @@ export async function GET({locals: { supabase }}){
 
     // return the campaign and the sum of transactions
 
-    return json({ campaign, total_donated })
+    //fetch the number of complete transactions of the campaign from supabase
+    const { data:total_transactions, error:total_transactions_error } = await supabase.rpc('get_completed_transactions_count_by_campaign_id', {
+        campaign_id: campaign.id
+    })
+    if (total_transactions_error) return json({ error: total_transactions_error })
+
+    return json({ campaign, total_donated,total_transactions })
 
 }
 
