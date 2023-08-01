@@ -182,7 +182,7 @@
                     <div class="flex items-center rounded-lg border-2 border-green-500 w-full text-lg md:text-2xl px-2 md:px-4 font-bold">
                         <p class="">Ksh</p>
                         <div class="flex-grow">
-                            <input on:input={(e)=>{active_donation=3;donate_form.amount=e.target.value}} type="number" name="" value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
+                            <input type="number" name="" value={donate_form.amount} id="" placeholder="Custom Amount eg:300" class="w-full text-green-500 focus:outline-none focus:border-none  text-lg  outline-none border-none">
                         </div>
                     </div>
                 </div>
