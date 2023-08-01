@@ -88,7 +88,7 @@ export async function POST({ locals: { supabase }, request }) {
                     phone: donation.phone
                 },
             ])
-            .single()
+            .select()
             
         // // if there is an error, return the error
         if (transaction_error) return json({ error: transaction_error })
@@ -96,6 +96,6 @@ export async function POST({ locals: { supabase }, request }) {
 
 
         // // return the campaign
-        return json({ data })
+        return json( data )
     
 }
