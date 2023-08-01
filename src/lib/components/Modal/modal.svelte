@@ -59,12 +59,12 @@
           </div>
           <div
             id="export-card"
-            class="bg-purple-900 rounded-lg p-4 py-4 lg:p-10 flex flex-col items-center w-full lg:w-3/4 mx-auto" style="background-image:url('{Donatebg}');"
+            class="bg-purple-900 rounded-lg p-4 py-4 lg:p-4 flex flex-col items-center w-full lg:w-3/4 mx-auto" style="background-image:url('{Donatebg}');"
           >
             <div class="flex justify-center">
               <img src="{Donation}" class="mx-2" alt="">
               <div class="bg-white px-2 rounded-md">
-                <img class="h-56 w-56 object-cover" src={Avatar} alt="" />
+                <img class="h-40 w-40 object-cover" src={Avatar} alt="" />
                 <div class="flex flex-col items-center">
                   <h1 class="my-2 font-bold">{donation.name}</h1>
                   <h2 class="my-2">Tech for Good supporter</h2>
@@ -78,7 +78,7 @@
 
           </div>
 
-          <div class="flex mt-5 px-4 md:px-12 justify-center font-bold">
+          <div class="flex mt-5 px-4 md:px-6 justify-center font-bold">
               <div on:click={exportCard} class="flex items-center px-2 md:px-4 border-2 cursor-pointer border-black rounded-full px-2 py-1 mr-4 md:mr-12">
                 <p class="mr-2">Share</p> <img src="{Share}" class="h-4 h-4" alt="">
               </div>
