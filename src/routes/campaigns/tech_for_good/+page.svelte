@@ -1,30 +1,16 @@
 <script>
     import PlayBtn from '$lib/assets/play.png';
     import HeaderImg from '$lib/assets/header.png';
-<<<<<<< HEAD
-    import {Donatebutton, Aligner, Modal} from '$lib/components';
-    let showModal=false;
-    const openModal = () => {
-        showModal=!showModal;
-    }
-=======
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
     import SchoolImg from '$lib/assets/school.png';
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-<<<<<<< HEAD
     import {CampaignFooter} from '$lib/components';
 
-=======
-    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton} from '$lib/components';
+    import {Donatebutton, Aligner,Modal,TriggerDonateButton} from '$lib/components';
 
-    let showModal=false;
-    const openModal = () => {
-        showModal=!showModal;
-    }
-
-    let active_donation = 1;
+    // let showModal=false;
+    // const openModal = () => {
 
     let donate_form = {
         amount: 500,
@@ -66,15 +52,12 @@
             donate_loading=false
         })
     }
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
-
 </script>
 
 
 <style>
 
     .header-col{
-        min-height: 60vh;
     }
 
     .header-col-2{
@@ -93,7 +76,7 @@
 
 <section>
 
-    <Modal {showModal} on:click={openModal}/>
+    <!-- <Modal {showModal} on:click={openModal}/> -->
     <div class="md:relative">
         <div class="grid grid-cols-1 md:grid-cols-2 md:pb-20">
 
@@ -174,8 +157,6 @@
                 </div>
             </Aligner>
         </div>
-<<<<<<< HEAD
-=======
 
         <div>
         
@@ -205,7 +186,6 @@
             </Aligner>
              
         </div>
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
     </div>   
     <div>
         <Aligner>
@@ -263,10 +243,4 @@
     <CampaignFooter/>
             
     
-<<<<<<< HEAD
-
-         
-
-=======
->>>>>>> 97953d53a95b9e9f3eb95ba4de3a28ce7de5de52
 </section>
