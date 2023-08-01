@@ -3,6 +3,14 @@
 // import the ruler component
 import Ruler from './Ruler.svelte';
 
+// import the images
+import LinkedIn from '$lib/assets/footer/in.png';
+import Twitter from '$lib/assets/footer/tweet.png';
+import  YouTube from '$lib/assets/footer/tube.png';
+import InstaGram from '$lib/assets/footer/insta.png';
+
+
+
 function handleSubscribeClick() {
     // Make an API call to send the subscription email
     fetch('/api/subscribe', {
@@ -25,10 +33,10 @@ function handleSubscribeClick() {
   }
 
   let socials = [
-    {img: 'img/in.png', alt: 'linkedin'},
-    {img: 'img/tweet.png', alt: 'twitter'},
-    {img: 'img/tube.png', alt: 'youtube'},
-    {img: 'img/insta.png', alt: 'instagram'},
+    {img: LinkedIn, alt: 'linkedin'},
+    {img: Twitter, alt: 'twitter'},
+    {img: YouTube, alt: 'youtube'},
+    {img: InstaGram, alt: 'instagram'},
   ]
 
 
