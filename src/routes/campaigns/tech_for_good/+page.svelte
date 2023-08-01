@@ -15,14 +15,15 @@
 
     // let showModal=false;
     // const openModal = () => {
-
+    export let active_donation;
     let donate_form = {
-        amount: 500,
+        amount:"",
         name: "",
         email: "",
         phone: "",
         message: "",
     }
+
 
     let donate_loading = false;
 
