@@ -9,7 +9,7 @@
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
 
-    let showModal=false;
+    let showModal=true;
     let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
@@ -143,7 +143,7 @@
 
 <section>
 
-    <Modal {showModal} donation={donate_form} on:closed={()=>{showModal=false}}/>
+    <Modal {showModal} donation={donate_form} on:closed={()=>{showModal=true}}/>
 
     <VideoModal show={video_modal} on:closed={()=>{video_modal=false}}/>
     <div class="md:relative">
