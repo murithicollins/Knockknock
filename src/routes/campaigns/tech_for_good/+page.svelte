@@ -226,7 +226,7 @@
             </div>
         </Aligner>
         
-        <div class="my-24 md:my-12">
+        <div class="my-6 md:my-12">
             <Aligner>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-24 ">
                     <div>
