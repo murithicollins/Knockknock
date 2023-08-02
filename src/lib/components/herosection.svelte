@@ -39,7 +39,7 @@
               <p >KnockKnock gadget</p><img src={ArrowRight} alt="" class="inline-block h-5 w-5">
             </a>
 
-            <a href="/bell" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
+            <a href="/main/bell" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
               <p >I-Bell</p><img src={ArrowRight} alt="" class="inline-block h-5 w-5">
             </a>
             
