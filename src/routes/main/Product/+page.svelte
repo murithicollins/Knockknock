@@ -1,5 +1,6 @@
 <script>
     import {Ruler} from '$lib/components';
+    import KnockImg from '$lib/assets/products/knock.png';
 </script>
 <!-- main  -->
 <Ruler>
@@ -7,7 +8,7 @@
         <!-- knock knock -->
         <div class="flex flex-col md:flex-row justify-center my-4 md:my-10">
             <div>
-                <img src="img/knock.png" alt="">
+                <img src={KnockImg} alt="">
             </div>
             <!-- context -->
             <div class="flex items-center justify-center bg-white ">
