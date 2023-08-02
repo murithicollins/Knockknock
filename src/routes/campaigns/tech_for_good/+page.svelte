@@ -15,15 +15,17 @@
         showModal=!showModal;
     }
 
-    let active_donation = 1;
-
+    // let showModal=false;
+    // const openModal = () => {
+    export let active_donation;
     let donate_form = {
-        amount: 500,
+        amount:"",
         name: "",
         email: "",
         phone: "",
         message: "",
     }
+
 
     let donate_loading = false;
     let donate_mode = "default";
@@ -132,7 +134,6 @@
 <style>
 
     .header-col{
-        min-height: 60vh;
     }
 
     .header-col-2{

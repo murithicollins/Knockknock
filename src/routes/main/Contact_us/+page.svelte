@@ -1,6 +1,10 @@
 <script>
     export let data;
     import {Ruler} from '$lib/components';
+    import MessageIcon from '$lib/assets/contact/message.png';
+    import phoneIcon from '$lib/assets/contact/phone.png';
+
+
 </script>
 <Ruler>
     <main>
@@ -20,17 +24,17 @@
             <!-- MAIN CONTAINER -->
             <form method="POST"  class="flex justify-centers md:justify-end">
                     <!-- container -->
-                <div class="w-full md:w-4/12  bg-[#FFFFFF]  shadow-md flex  flex-col  m-8 md:m-20" >
+                <div class="w-full md:w-4/12  bg-[#FFFFFF] rounded-lg shadow-md flex  flex-col  m-8 md:m-20" >
                     <!-- context -->
                     <div class="p-4'">
                             <!-- mail and phone -->
                         <div class="ml-10 md:ml-20 my-4 md:my-10">
                             <div class="flex flex-col md:flex-row justify-center md:justify-start">
-                                <img src="img/message.png" alt="" class="h-2 md:h-12 w-4 md:w-12">
+                                <img src={MessageIcon} alt="" class="h-2 md:h-12 w-4 md:w-12">
                                 <p class="p-2">admin.knockknock.co.ke</p>
                             </div>
                             <div class="flex">
-                                <img src="img/phone.png" class="h-12"alt="">
+                                <img src={phoneIcon} class="h-12"alt="">
                                 <p>+254 113 873 715</p>
                             </div>
                 
@@ -65,7 +69,7 @@
                     </div>
                     <!-- lets talk -->
                     <div class=" ">
-                        <button class="bg-[#EF6C00] w-full h-14 p-2" type="submit">
+                        <button class="bg-[#EF6C00] rounded-lg  w-full h-14 p-2" type="submit">
                             <h1>Let's talk ! </h1>
                             <img src="" alt="">
                         </button>
