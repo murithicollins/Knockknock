@@ -8,6 +8,8 @@ import LinkedIn from '$lib/assets/footer/in.png';
 import Twitter from '$lib/assets/footer/tweet.png';
 import  YouTube from '$lib/assets/footer/tube.png';
 import InstaGram from '$lib/assets/footer/insta.png';
+import MessageIcon from '$lib/assets/footer/message.png';
+import PhoneIcon from '$lib/assets/footer/phone.png';
 
 
 
@@ -55,12 +57,12 @@ function handleSubscribeClick() {
                         </p>
                     </div>
                     <div class="flex items-center gap-4 my-2">
-                        <img src="img/phone.png" alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
+                        <img src={PhoneIcon} alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
                         <a href="tel:+254-113873715" class="font-regular text-sm">Phone: &nbsp +254-113-873-715</a>
                     </div>
 
                     <div class="flex items-center gap-4 my-2">
-                        <img src="img/message.png" alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
+                        <img src={MessageIcon} alt="" class="h-6 w-6 p-1 rounded-full border-2 border-[#EF6C00]" >
                         <a href="mailto:info@knockknock.co.ke" class="font-regular text-sm">Email: &nbsp info@knockknock.co.ke</a>
                     </div>
 
