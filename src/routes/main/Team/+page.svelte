@@ -1,5 +1,5 @@
 <script>
-  import Ruler from "../../components/Ruler.svelte";
+    import {Ruler} from '$lib/components';
 </script>
 
 <Ruler>

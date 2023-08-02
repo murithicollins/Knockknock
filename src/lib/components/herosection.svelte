@@ -1,10 +1,14 @@
 <script>
+  // imporrting images
+  import ArrowRight from '$lib/assets/home/arrow-right.svg';
 
   //import Ruler
   import {Ruler} from '$lib/components'
 
   //import Carousel
   import {Carousel} from '$lib/components'
+
+
 
     
 </script>
@@ -18,46 +22,39 @@
 
       <div class="flex items-center">
         <div>
-            <h1 class="text-4xl font-bold font-primary  text-[#EF6C00]">
-              KNOCK KNOCK
-            </h1>
+          <h1 class="text-4xl font-bold font-primary  text-[#EF6C00]">
+            KNOCK KNOCK
+          </h1>
 
-            <p class="my-4 md:my-6 leading-loose border rounded-lg text-sm p-4">
-              A <span class="text-[#EF6C00] font-bold">global innovation</span> hub for assistive and <span class="text-[#EF6C00] font-bold">inclusive tech</span> <br> for persons with <span class="text-[#EF6C00] font-bold">hearing loss</span>. 
+          <p class="my-4 md:my-6 leading-loose border rounded-lg text-sm p-4">
+            A <span class="text-[#EF6C00] font-bold">global innovation</span> hub for assistive and <span class="text-[#EF6C00] font-bold">inclusive tech</span> <br> for persons with <span class="text-[#EF6C00] font-bold">hearing loss</span>. 
+          </p>
+
+          <h1 class="text font-semibold underline">Some of our works</h1>
+
+          <div class="flex my-4 gap-4">
+            
+
+            <a href="/Product" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
+              <p >KnockKnock gadget</p><img src={ArrowRight} alt="" class="inline-block h-5 w-5">
+            </a>
+
+            <a href="/bell" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
+              <p >I-Bell</p><img src={ArrowRight} alt="" class="inline-block h-5 w-5">
+            </a>
+            
+          </div>
+
+          <div>
+            <p class="xl:text-sm my-4">
+              We are always excited to work with people who are passionate about making the world a better place for persons with hearing loss.
             </p>
 
-            <h1 class="text font-semibold underline">Some of our works</h1>
-
-            <div class="flex my-4 gap-4">
-              
-
-              <a href="/Product" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
-                <p >KnockKnock gadget</p><img src="/img/arrow-right.svg" alt="" class="inline-block h-5 w-5">
-              </a>
-
-              <a href="/bell" class="border border-[#00394F] flex items-center gap-4 text-wite px-4 py-2 rounded-full text-xs">
-                <p >I-Bell</p><img src="/img/arrow-right.svg" alt="" class="inline-block h-5 w-5">
-              </a>
-              
-            </div>
-
-            <div>
-              <p class="xl:text-sm my-4">
-                We are always excited to work with people who are passionate about making the world a better place for persons with hearing loss.
-              </p>
-
-              <button class="my-4" on:click={() => window.location.href = "mailto:info@knockknock.co.ke"}
-                  >
-                  <div class="text-xs font-tertiary font-bold  text-white  bg-[#00394F] p-4 rounded-full">Work with Us</div>
-              </button>
-            </div>
-              
-
-
-
-
-
-
+            <button class="my-4" on:click={() => window.location.href = "mailto:info@knockknock.co.ke"}
+                >
+                <div class="text-xs font-tertiary font-bold  text-white  bg-[#00394F] p-4 rounded-full">Work with Us</div>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -129,7 +126,7 @@
       
     </div>
     </div> --> 
-<style>
+<style> 
 .image{
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
