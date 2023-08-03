@@ -28,14 +28,14 @@
                     <!-- context -->
                     <div class="p-4'">
                             <!-- mail and phone -->
-                        <div class="ml-10 md:ml-20 my-4 md:my-10">
-                            <div class="flex flex-col md:flex-row justify-center md:justify-start">
-                                <img src={MessageIcon} alt="" class="h-2 md:h-12 w-4 md:w-12">
-                                <p class="p-2">admin.knockknock.co.ke</p>
+                        <div class="ml-10 md:ml-20 my-4 md:my-10 space-y-4">
+                            <div class="flex flex-col md:flex-row justify-center md:justify-start ">
+                                <img src={MessageIcon} alt="" class="h-6 w-6 ">
+                                <p class="pl-4">admin.knockknock.co.ke</p>
                             </div>
                             <div class="flex">
-                                <img src={phoneIcon} class="h-12"alt="">
-                                <p>+254 113 873 715</p>
+                                <img src={phoneIcon} class="h-6"alt="">
+                                <p class="pl-4">+254 113 873 715</p>
                             </div>
                 
                         </div>
