@@ -73,6 +73,7 @@
                 </div>
                 <!-- button -->
                 <div class="flex justify-center">
+
                     <a href="/main/bell ">
                         <button class="inline-flex items-center justify-center h-12 px-6 mr-6 font-tertiary text-white transition duration-200 rounded-full shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-cyan-950">LEARN MORE</button>
                     </a>
