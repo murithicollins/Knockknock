@@ -8,7 +8,7 @@
     </div>
     <div id="cards">
       <div class="flex justify-center my-4">
-        <p class="text-24 font-secondary text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
+        <p class="text-sm md:text-24 font-secondary text-[#00394F]">Partner with us in our initiative of helping the Deaf navigate the sound environment. 
           What we are looking for: </p>
       </div>
       <div class="flex justify-center my-8 flex-col md:flex-row  ">
@@ -17,7 +17,7 @@
             <h1 class="card__name font-primary text-4xl">✓  Strategic Partner </h1>
             <p class="border-4 rounded-full border-[#00394F] "></p>
             <div class="card__stats">
-              <p class="p-2 font-secondary text-24">
+              <p class="p-2 text-sm md:text-24 font-secondary">
                 We are looking to partner with organizations that share the same 
                 vision of helping persons with hearing loss to implement the project. 
                 The partnership is dynamic, depending on what the organization can 
@@ -32,7 +32,7 @@
             <p class="border-4 rounded-full border-[#00394F] "></p>
             <table class="card__stats">
               <div>
-                <p class="p-2 font-secondary text-24">We are seeking financial support to help scale knock knock. 
+                <p class="p-2 text-sm md:text-24 font-secondary">We are seeking financial support to help scale knock knock. 
                   Our goal is to expand knock knock to reach a larger population particularly those of low income 
                   who cannot afford the gadget at the current price.
                 </p>
@@ -47,7 +47,7 @@
             <p class="border-4 rounded-full border-[#00394F] "></p>
             <table class="card__stats">
               <div>
-                <p class="p-2 font-secondary text-24">We are looking for organizations that could help us subsidize production and operation costs
+                <p class="p-2 text-sm md:text-24 font-secondary">We are looking for organizations that could help us subsidize production and operation costs
                   by exploring existing networks. Such includes support in manufacturing, production, and
                   support by providing us with working space to expand and scale the project.
               </p>

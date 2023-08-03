@@ -12,14 +12,14 @@
   <main>
     <!-- about section -->
     <div class="flex justify-center item-center">
-      <div class="flex flex-col md:flex-row justify-center gap-10 shadow-xl   bg-[#D9D9D9] p-4 md:p-10 md:py-4 md:px-14">
+      <div class="flex flex-col md:flex-row justify-center gap-10 shadow-xl bg-[#D9D9D9] p-4 md:p-10 md:py-4 md:px-14">
         <div class="">
           <img src={KnockTeam} class="rounded-r-3xl " alt="" height="500" width="1000"/>
         </div>
-        <div class="flex justify-center  w-full md:w-3/5 p-4 md:p-10">
+        <div class="flex justify-center  w-full md:w-3/5 p-2 md:p-10">
           <div>
             <h1 class="mb-4 text-2xl font-primary font-bold  text-[#EF6C00]">About Us</h1>
-            <p class="text-24 font-secondary">
+            <p class="text-sm md:text-24 font-secondary">
               Knock knock was started in December 2021 with the goal of building a gadget that could alert a Deaf person when a knock happened on their door. However, with research and study into the target population, we realized that the problem dug deeper than just the inability of Deaf persons to know when someone is at their door.
                 Stories from the Deaf community revealed how crippled this population
                 was by their inability to perceive sounds; which pushed us to think deeper, not just in terms of a product but what impact we, as experienced techies, could make on this community.
@@ -44,8 +44,8 @@
                   style="" />
               </div>
             </div>
-            <div class="flex justify-center">
-              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="justify-center">
+              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24   bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">

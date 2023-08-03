@@ -8,12 +8,18 @@
     import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
-
+  
     let showModal=false;
     let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
     }
+    import SchoolImg from '$lib/assets/school.png';
+    import KnockImg from '$lib/assets/why.png';
+    import TawaLogo  from '$lib/assets/tawa.png';
+    import TinyLogo from '$lib/assets/tiny.png';
+    import {CampaignFooter} from '$lib/components';
+
 
     // let showModal=false;
     // const openModal = () => {
@@ -83,6 +89,7 @@
 
         })
     }
+
 
     let campaign_data={
         campaign:{}
@@ -167,10 +174,6 @@
                     <p class="text-white leading-loose my-5">
 
                         Let's join hands and push forward tech innovations for the Deaf! In view of September, Deaf awareness month, i-bell intends to bring an inclusive bell system to Treeside Kasarani School for the Deaf!! We can all be pioneers of inclusive learning by supporting this initiative. 
-
-                        
-
-
                     </p>
                     <p class="text-xl mb-5 md:text-2xl text-white font-bold">
                         Amount we are raising: Ksh. 425, 531.60
@@ -247,6 +250,7 @@
             </Aligner>
         </div>
 
+
         <div>
         
             <Aligner>
@@ -275,6 +279,7 @@
             </Aligner>
              
         </div>
+
     </div>   
     <div>
         <Aligner>
@@ -338,4 +343,7 @@
     <CampaignFooter/>
             
     
+
+         
+
 </section>
