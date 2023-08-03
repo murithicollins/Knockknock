@@ -44,8 +44,8 @@
                   style="" />
               </div>
             </div>
-            <div class="flex justify-center">
-              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="justify-center">
+              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24   bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">

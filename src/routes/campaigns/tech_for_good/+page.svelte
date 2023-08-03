@@ -167,10 +167,6 @@
                     <p class="text-white leading-loose my-5">
 
                         Let's join hands and push forward tech innovations for the Deaf! In view of September, Deaf awareness month, i-bell intends to bring an inclusive bell system to Treeside Kasarani School for the Deaf!! We can all be pioneers of inclusive learning by supporting this initiative. 
-
-                        
-
-
                     </p>
                     <p class="text-xl mb-5 md:text-2xl text-white font-bold">
                         Amount we are raising: Ksh. 425, 531.60
