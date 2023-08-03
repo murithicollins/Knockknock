@@ -8,12 +8,18 @@
     import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
   import { onMount } from 'svelte';
   import { get } from 'svelte/store';
-
+  
     let showModal=false;
     let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
     }
+    import SchoolImg from '$lib/assets/school.png';
+    import KnockImg from '$lib/assets/why.png';
+    import TawaLogo  from '$lib/assets/tawa.png';
+    import TinyLogo from '$lib/assets/tiny.png';
+    import {CampaignFooter} from '$lib/components';
+
 
     // let showModal=false;
     // const openModal = () => {
@@ -83,6 +89,7 @@
 
         })
     }
+
 
     let campaign_data={
         campaign:{}
@@ -243,6 +250,7 @@
             </Aligner>
         </div>
 
+
         <div>
         
             <Aligner>
@@ -271,6 +279,7 @@
             </Aligner>
              
         </div>
+
     </div>   
     <div>
         <Aligner>
@@ -334,4 +343,7 @@
     <CampaignFooter/>
             
     
+
+         
+
 </section>
