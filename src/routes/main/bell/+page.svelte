@@ -1,5 +1,7 @@
 <script>
     import {Ruler} from '$lib/components';
+    import NormBell from '$lib/assets/bell/normbell.svg';
+    import IBell from '$lib/assets/bell/ibell.svg';
 </script>
 <Ruler>
     <main>
@@ -13,7 +15,7 @@
                         <h3 class="font-primary text-xl font-bold text-[#EF6C00] ">The "normal" bell system</h3>
                     </div>
                     <div>
-                        <img src="img/normbell.svg" alt="">
+                        <img src={NormBell} alt="">
                     </div>
                 </div>
             </div>
@@ -46,7 +48,7 @@
                         <h3 class="font-primary text-2xl font-bold text-[#EF6C00]">The i-bell system</h3>
                     </div>
                     <div>
-                        <img src="img/ibell.svg" alt="">
+                        <img src={IBell} alt="">
                     </div>
                 </div>
             </div>
@@ -58,38 +60,39 @@
                         <h1 class="font-primary text-2xl font-bold text-[#EF6C00]">Our Strategy</h1>
                     </div>
                     <!-- context -->
-                    <div class="p-4 font-secondary text-24 text-[#00394F] mb-10">
+                    <div class="p-4 font-secondary text-center text-24 text-[#00394F] mb-4">
                     <p>Our intention is to implement i-bell to all schools for the Deaf and integrated schools in Kenya as we move to those across Africa. How we can partner :  </p> 
                     </div>
-                    <div class="space-y-8 p-4 md:p-10 my-4 md:my-10 ">
+                    <div class="flex justify-end item">
+                        <div class="p-2 md:p-10 space-y-10">
     
-                        <div class="flex flex-col md:flex-row  gap-4 ">
-                            <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5">
-                                ✓ Implementation partners: 
-                            </p>
-                            <p class="font-secondary font-normal text-24 text-[#00394F] w-4/5">  
-                                we work with organizations and institutions who support us in installing i-bell to one or several schools for the Deaf in kenya
-                            </p> 
-                        </div>
-    
-                        <div class="flex flex-col md:flex-row gap-4">
-                            <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5">
-                                ✓ Operational partner:  
-                            </p>
-                            <p class="font-secondary font-normal text-24 text-[#00394F] w-4/5 ">  
-                                we work with organizations to subsidize production and operation costs
-                                by exploring existing networks. Such includes support in manufacturing, production, and support by providing us with working space to expand and scale the project.
-                            </p> 
-                        </div>
-    
-                        <div class="flex  flex-col md:flex-row gap-4">
-                            <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/5 ">
-                                ✓ Strategic partner: 
-                            </p>
-                            <p class=" font-secondary font-normal text-24 text-[#00394F] w-4/5">  
-                                We work on dynamic partnerships with organizatiosn that share the saeme vision of helping students with learning loss. The partnership is dynamic 
-                                depending on what support the organization can provide.
-                            </p> 
+                            <div class="flex  flex-col md:flex-row gap-4">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/6">
+                                    ✓ Implementation partners: 
+                                </p>
+                                <p class="font-secondary font-normal text-24 text-[#00394F] w-5/6">  
+                                    we work with organizations and institutions who support us in installing i-bell to one or several schools for the Deaf in kenya
+                                </p> 
+                            </div>
+                            <div class="flex  flex-col md:flex-row gap-4">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/6">
+                                    ✓ Operational partner:  
+                                </p>
+                                <p class="font-secondary font-normal text-24 text-[#00394F] w-5/6">  
+                                    we work with organizations to subsidize production and operation costs
+                                    by exploring existing networks. Such includes support in manufacturing, production, and support by providing us with working space to expand and scale the project.
+                                </p> 
+                            </div>
+        
+                            <div class="flex  flex-col md:flex-row gap-4">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F]  md:w-1/6  ">
+                                    ✓ Strategic partner: 
+                                </p>
+                                <p class=" font-secondary font-normal text-24 text-[#00394F] w-5/6 ">  
+                                    We work on dynamic partnerships with organizatiosn that share the saeme vision of helping students with learning loss. The partnership is dynamic 
+                                    depending on what support the organization can provide.
+                                </p> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,6 +101,7 @@
     </main>
 </Ruler>
 <style>
+
 .font-primary {
         font-family: "Quicksand", sans-serif;
     }
