@@ -1,5 +1,7 @@
 <script>
-import Ruler from "./Ruler.svelte";
+      import RoadMap from '$lib/assets/home/roadmap.png';
+
+    import Ruler from "./Ruler.svelte";
 </script>
 <Ruler>
     <div class="py-4 md:py-8 px-4">
@@ -13,7 +15,7 @@ import Ruler from "./Ruler.svelte";
             </p>
         </div>
         <div class="flex justify-center mb-8 md:mb-16 mx-10 md:mx-40">
-            <img src="img/roadmap.png" class=" " alt="This image shows the roadmap for knock knock. 
+            <img src={RoadMap} class=" " alt="This image shows the roadmap for knock knock. 
             They started by building a solution to convey a door knock to the Deaf then proceeded to bell ringing sounds in schools for the Deaf, which they call i-bel.
             They are currently working towards representing teh sound of baby crying for Deaf Mothers; which they call b. Monitor. 
             Their next step is to look into outside sounds like car hooting. Their eventual goal is to convey numerous sounds within a single gadget." />

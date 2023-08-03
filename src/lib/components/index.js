@@ -10,6 +10,9 @@ export { default as Donatebutton } from './campaign/donatebutton.svelte';
 export { default as Aligner } from './campaign/aligner.svelte';
 export { default as CampaignFooter} from './campaign/footer.svelte'
 
+export { default as VideoModal } from './campaign/videomodal.svelte';
+
+
 
 
 

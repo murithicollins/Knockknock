@@ -1,5 +1,6 @@
 <script>
-import Ruler from "../../components/Ruler.svelte";
+    import {Ruler} from '$lib/components';
+    import KnockImg from '$lib/assets/products/knock.png';
 </script>
 <!-- main  -->
 <Ruler>
@@ -7,7 +8,7 @@ import Ruler from "../../components/Ruler.svelte";
         <!-- knock knock -->
         <div class="flex flex-col md:flex-row justify-center my-4 md:my-10">
             <div>
-                <img src="img/knock.png" alt="">
+                <img src={KnockImg} alt="">
             </div>
             <!-- context -->
             <div class="flex items-center justify-center bg-white ">
@@ -72,7 +73,7 @@ import Ruler from "../../components/Ruler.svelte";
                 </div>
                 <!-- button -->
                 <div class="flex justify-center">
-                    <a href="/bell ">
+                    <a href="/bell">
                         <button class="inline-flex items-center justify-center h-12 px-6 mr-6 font-tertiary text-white transition duration-200 rounded-full shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-cyan-950">LEARN MORE</button>
                     </a>
                 </div>

@@ -1,5 +1,11 @@
 <script>
-  import Ruler from "../../components/Ruler.svelte";
+    import {Ruler} from '$lib/components';
+    // importing images
+    import KnockTeam from '$lib/assets/team/knock team.png';
+    import EstherImg from '$lib/assets/team/Esther.jpg';
+    import BrianImg from '$lib/assets/team/Brian.jpg';
+    import JoeImg from '$lib/assets/team/joe.jpg';
+    import DennisImg from '$lib/assets/team/Dennis.png';
 </script>
 
 <Ruler>
@@ -8,7 +14,7 @@
     <div class="flex justify-center item-center">
       <div class="flex flex-col md:flex-row justify-center gap-10 shadow-xl   bg-[#D9D9D9] p-4 md:p-10 md:py-4 md:px-14">
         <div class="">
-          <img src="img/knock team.png" class="rounded-r-3xl " alt="" height="500" width="1000"/>
+          <img src={KnockTeam} class="rounded-r-3xl " alt="" height="500" width="1000"/>
         </div>
         <div class="flex justify-center  w-full md:w-3/5 p-4 md:p-10">
           <div>
@@ -34,12 +40,12 @@
           <div class="flex gap-10 relative mb-24 md:mb-0">
             <div class=" flex justify-center">
               <div class="flex justify-center" style="">
-                <img src="img/Esther.jpg" class="mx-auto shadow-lg" alt=""
+                <img src={EstherImg} class="mx-auto shadow-lg" alt=""
                   style="" />
               </div>
             </div>
-            <div class="flex justify-center">
-              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="justify-center">
+              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24   bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">
@@ -58,7 +64,7 @@
           <div class="flex gap-10 relative mb-24 md:mb-0">
             <div class=" flex justify-center">
               <div class="flex justify-center" style="">
-                <img src="img/Brian.jpg" class="mx-auto shadow-lg" alt=""
+                <img src={BrianImg} class="mx-auto shadow-lg" alt=""
                   style="" />
               </div>
             </div>
@@ -82,7 +88,7 @@
           <div class="flex gap-10 relative mb-24 md:mb-0">
             <div class=" flex justify-center">
               <div class="flex justify-center" style="">
-                <img src="img/joe.jpg" class="mx-auto shadow-lg" alt=""
+                <img src={JoeImg} class="mx-auto shadow-lg" alt=""
                   style="" />
               </div>
             </div>
@@ -106,7 +112,7 @@
           <div class="flex gap-10 relative mb-24 md:mb-0">
             <div class=" flex justify-center">
               <div class="flex justify-center w-full" style="">
-                <img src="img/Dennis.png" class="mx-auto  shadow-lg object-cover" alt=""
+                <img src={DennisImg} class="mx-auto  shadow-lg object-cover" alt=""
                   style="" />
               </div>
             </div>

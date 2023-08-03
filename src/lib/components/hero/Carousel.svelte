@@ -1,18 +1,23 @@
 <script>
 
+    import AwardPhoto from '$lib/assets/home/award.jpg';
+    import KnockTeam from '$lib/assets/home/knock team.png';
+    import KnockImage from '$lib/assets/home/knock.png';
+
+
     let carousel_images = [
         {
-            src: 'img/hero/award.jpg',
+            src: AwardPhoto,
             alt: 'Knockknock award',
             description: 'Innovate now award in the category of health and wellness year 2022'
         },
         {
-            src: 'img/hero/knock team.png',
+            src: KnockTeam ,
             alt: 'Knockknock award',
             description: 'Innovate now award in the category of health and wellness year 2022'
         },
         {
-            src: 'img/hero/knock.png',
+            src:    KnockImage,
             alt: 'Knockknock award',
             description: 'Innovate now award in the category of health and wellness year 2022'
         }
