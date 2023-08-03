@@ -1,63 +1,92 @@
+
 <script>
   import KnockIcon from '$lib/assets/navbar/long logo.png';
-   
 
+  let showMenu = false;
+
+  function toggleNavbar() {
+    showMenu = !showMenu;
+  }
 </script>
 
-<nav class="shadow-xl bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<div>
+  <nav class="w-full px-44 py-8 mx-auto md:flex md:justify-between md:items-center shadow-xl bg-white fixed top-0 z-50">
+    <div class="flex items-center justify-between">
       <a href="/" class="flex items-center">
-          <img src={KnockIcon} class="h-12 mr-3" alt="KNOCK KNOCK" />
-          <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+        <img src={KnockIcon} class="h-12 mr-3" alt="KNOCK KNOCK" />
       </a>
-      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 md:mt-0 md:border-0  md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="/main" class="text-[#EF6C00] font-primary font-bold hover:underline" aria-current="page">Home</a>
-          </li>
-
-          <li>
-            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pr-4 text-[#EF6C00] rounded hover:underline hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-              <a href="/main/Product" class="font-primary font-bold">Product</a> 
-              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
-            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                <li>
-                  <a href="/main/bell" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">I-BELL</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="/main/Team" class="text-[#EF6C00] font-primary font-bold  hover:underline">Team</a>
-          </li> 
-          <li>
-            <a href="/main/Contact_us" class="text-[#EF6C00] font-primary font-bold dark:text-white hover:underline">Contact</a>
-          </li>
-      </ul>
+      <!-- Mobile menu button -->
+      <div on:click={toggleNavbar} class="flex md:hidden">
+        <button
+          type="button"
+          class="text-gray-800 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
       </div>
     </div>
-</nav>
+
+    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+    <div class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu? 'flex': 'hidden'}">
+      <ul class="flex flex-col font-medium  md:p-0 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:border-0 md:dark:bg-gray-900 dark:border-gray-700">
+        <!-- ... (rest of the code) ... -->
+        <li>
+          <a href="/main" class="text-[#EF6C00] font-primary font-bold hover:underline" aria-current="page">Home</a>
+        </li>
+        <li class="relative">
+          <input type="checkbox" id="sortbox" class="hidden absolute">
+          <label for="sortbox" class="flex items-center space-x-1 cursor-pointer">
+          <a href="/main/Product" class="text-[#EF6C00] font-primary font-bold hover:underline">Product</a>
+          <!-- <span href="/main/Product" class="font-primary font-bold" class="text-lg">Product</span> -->
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+          </label>
+              <div id="sortboxmenu" class="absolute mt-1 right-1 top-full min-w-max shadow rounded opacity-0 bg-gray-300 border border-gray-400 transition delay-75 ease-in-out z-10">
+              <ul class="block text-right text-gray-900">
+                  <li><a href="/main/bell" class="block px-3 py-2 hover:bg-gray-200">I-bell</a></li>
+              </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="/main/Team" class="text-[#EF6C00] font-primary font-bold  hover:underline">Team</a>
+        </li> 
+        <li>
+          <a href="/main/Contact_us" class="text-[#EF6C00] font-primary font-bold dark:text-white hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 <style>
-.font-primary {
-      font-family: "Quicksand", sans-serif;
+  .font-primary {
+        font-family: "Quicksand", sans-serif;
+      }
+  .font-secondary {
+        font-family: sans-serif;
+      }
+      
+  .font-tertiary {
+        font-family: "Museo Slab", serif;
+      }
+      #sortbox:checked ~ #sortboxmenu {
+        opacity: 1;
     }
-.font-secondary {
-      font-family: sans-serif;
-    }
-    
-.font-tertiary {
-      font-family: "Museo Slab", serif;
-    }
-
-
 </style>
+
                 
                   
