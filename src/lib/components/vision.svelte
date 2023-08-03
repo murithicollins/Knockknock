@@ -65,7 +65,7 @@
   width: 300px;
   /* padding: 1em; */
   border-radius: 15px;
-  margin: 20px;
+  margin: 2px;
   background: #ddd;
   box-shadow: 0px 5px 20px -10px #111111;
   transition: 0.4s;
@@ -114,6 +114,18 @@
   z-index: 5;
   box-shadow: 0px 13px 30px -15px #000000;
   transform: translateY(-10px);
+}
+@media (max-width: 768px) {
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    margin: 20px;
+  }
 }
 
 </style>

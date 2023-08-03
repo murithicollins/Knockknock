@@ -108,8 +108,8 @@ function handleSubscribeClick() {
                         </div>
 
                         <div class="rounded-lg flex">
-                            <input class="relative rounded-l-lg"  type="email" name="" id="" placeholder="Your Email"/>
-                            <button class="bg-[#EF6C00] text-white rounded-r-lg px-4 py-2" on:click={handleSubscribeClick}>Subscribe</button>
+                            <input class="relative rounded-l-lg md:w-3/4"  type="email" name="" id="" placeholder="Your Email"/>
+                            <button class="bg-[#EF6C00] text-white rounded-r-lg md:px-4 py-2" on:click={handleSubscribeClick}>Subscribe</button>
                         </div>
                         
                     </div>
