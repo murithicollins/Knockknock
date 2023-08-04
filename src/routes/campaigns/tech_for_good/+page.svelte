@@ -1,24 +1,26 @@
 <script>
     import PlayBtn from '$lib/assets/play.png';
-    import HeaderImg from '$lib/assets/header.png';
     import SchoolImg from '$lib/assets/school.png';
     import KnockImg from '$lib/assets/why.png';
     import TawaLogo  from '$lib/assets/tawa.png';
     import TinyLogo from '$lib/assets/tiny.png';
-    import {Donatebutton, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
-  import { onMount } from 'svelte';
-  import { get } from 'svelte/store';
+    import BgSvg from '$lib/assets/curve_bg.svg';
+
+    import School1 from '$lib/assets/school/school1.jpeg';
+    import School2 from '$lib/assets/school/school2.jpeg';
+    import School3 from '$lib/assets/school/school3.jpeg';
+
+
+    import {Donatebutton,WhyDoIt, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
+    import { onMount } from 'svelte';
+    import { get } from 'svelte/store';
   
     let showModal=false;
     let video_modal=false;
     const openModal = () => {
         showModal=!showModal;
     }
-    import SchoolImg from '$lib/assets/school.png';
-    import KnockImg from '$lib/assets/why.png';
-    import TawaLogo  from '$lib/assets/tawa.png';
-    import TinyLogo from '$lib/assets/tiny.png';
-    import {CampaignFooter} from '$lib/components';
+    
 
 
     // let showModal=false;
@@ -141,10 +143,23 @@
 <style>
 
     .header-col{
+        min-height: 60vh;
+        background-image: url($lib/assets/curve_bg.svg);
+        background-size: cover;
+    }
+
+    .top-grid{
+        background-image:
+            linear-gradient(
+                90deg, rgb(147, 249, 185, 0.4) 0%, rgb(147, 249, 185, 0.4) 91.76%
+            ),
+        url($lib/assets/header.png);
+        background-size: cover;
+        
     }
 
     .header-col-2{
-        min-height: 20vh;
+        min-height: 40vh;
     }
 
     .gradient-bg{
@@ -163,9 +178,9 @@
 
     <VideoModal show={video_modal} on:closed={()=>{video_modal=false}}/>
     <div class="md:relative">
-        <div class="grid grid-cols-1 md:grid-cols-2 md:pb-20">
+        <div class="grid top-grid grid-cols-1 md:grid-cols-2 ">
 
-            <div class="gradient-bg header-col flex items-center justify-center">
+            <div class="header-col flex items-center justify-center md:pr-24">
                 
                 <div class="w-4/5">
                     <h1 class="text-2xl md:text-5xl text-white font-bold">
@@ -181,15 +196,15 @@
                 </div>
             </div>
     
-            <div class="relative header-col-2" style="background-image:url('{HeaderImg}')">
-                <div class="absolute top-0 bottom-0 left-0 right-0 faded flex items-center justify-center">
+            <div class="relative header-col-2" >
+                <div class="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
                     <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
                 </div>
             </div>
     
         </div>
     
-        <div class=" w-full pb-4 md:pb-12 md:absolute bottom-1">
+        <div class=" w-full pb-4 md:-mb-16 md:absolute bottom-1">
             <Aligner>
                 <div class=" py-5 bg-white  z-10 shadow-lg rounded-lg p-4">
 
@@ -230,7 +245,7 @@
             </div>
         </Aligner>
         
-        <div class="my-24 md:my-12">
+        <div class="my-6 md:my-12">
             <Aligner>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:gap-24 ">
                     <div>
@@ -284,26 +299,31 @@
     <div>
         <Aligner>
             <div class="md:flex  justify-between md:py-20  ">
-                <div class="space-y-8 w-full md:w-3/4" >
+                <div class="space-y-8 w-full md:w-3/4 py-8" >
                     <div>
-                        <h1 class="text-5xl font-bold text-[#393D5C]">
+                        <h1 class="text-2xl md:text-5xl font-bold text-[#393D5C]">
                             Why are we Doing This ? 
                         </h1>
                     </div>
-                    <div class="space-y-8 text-xl text-[#434343] font-medium  leading-loose">
+                    <div class="space-y-8 text-[#434343] font-medium  leading-loose">
                         <p>
-                            Treeside Kasarani School for the Deaf uses the ‘conventional’ sound based 
+                            <span class="text-green-500 font-bold">Treeside Kasarani School</span> for the Deaf uses the ‘conventional’ sound based 
                             bell system which is not inclusive for the Deaf students in school. The goal of 
                             the i-bell campaign is to install an inclusive bell to the school to enhance the 
                             education of these Deaf students and promote their inclusion.  
                         </p>
+                        
+
+                        <WhyDoIt/>
+
                         <p>
-                            We are also pushing the agenda for using tech4good! 
-                            You can learn more about the campaign <a href="https://drive.google.com/file/d/1BhzAVPRdoXJyLlO80fGgqDbb7rW0OSHc/view?usp=sharing" class="text-[#1D976C] underline underline-offset-1 ">here.</a>
+                            We are also pushing the agenda for using <span class="text-green-500 text-lg font-bold">tech4good!</span> 
+                            You can learn more about the campaign <a target="_blank" href="https://drive.google.com/file/d/1BhzAVPRdoXJyLlO80fGgqDbb7rW0OSHc/view?usp=sharing" class="text-[#1D976C] font-bold underline underline-offset-1 ">here.</a>
                         </p>
+                        
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative my-8">
                     <div>
                         <img src={KnockImg} alt="">
                     </div>
@@ -320,12 +340,50 @@
             </div>
         </Aligner> 
     </div>
+
+
+    <div class="md:my-8 lg:my-16">
+
+        
+
+        <Aligner> 
+        <h1 class="mt-36 mb-4 md:my-4 md:my-8 text-lg md:text-3xl font-bold">Project location.</h1>
+
+        <div class="grid grid-cols-1 gap-4  md:gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div>
+                <img src="{School1}" class="rounded-lg object-cover shadow" alt="">
+            </div>
+            <div>
+                <img src="{School2}" class="rounded-lg object-cover shadow" alt="">
+            </div>
+            <div>
+                <img src="{School3}" class="rounded-lg object-cover shadow" alt="">
+            </div>
+            <div class="border border-green-500 rounded-lg p-3 md:p-4">
+                <h1 class="text-lg md:text-2xl text-center font-bold text-[#1D976C]"> Partner in other ways</h1>
+                <p class="my-4 text-center">
+                    Are you a company or an individual(engineers, stakeholders in the education sector or in the deaf communities) who would like to partner with us in other ways?
+
+
+                </p>
+
+                <div class="flex items-center justify-center my-4">
+                    <a class="bg-[#1D976C] font-bold text-white px-3 py-2 md:px-4 md:py-3 rounded-lg" href="tel:+254 113 873 715">Give us a call</a>
+
+                </div>
+
+            </div>
+        </div>
+        </Aligner>  
+
+    </div>
+
     <div class="text-center m-4 md:m-8 lg:m-16">
-        <div class="space-y-8">
-            <h1 class="text-5xl font-bold text-[#393D5C] mt-28 md:mt-0">
+        <div class="space-y-8 my-8">
+            <h1 class="text-5xl font-bold text-[#393D5C] mt-40 md:mt-0">
                 Our Partners
             </h1>
-            <p class="text-lg text-[#434343] font-medium">
+            <p class="text-lg my-8 text-[#434343] font-medium">
                 This are among the groups and friends that have supported us through the <br> journey. 
             </p>
 

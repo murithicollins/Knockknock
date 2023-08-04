@@ -9,31 +9,31 @@
 
 </script>
 <!-- main div -->
-<div class="grid grid-cols-1 md:grid-cols-3 bg-green-500 py-4 md:py-8">
+<div class="grid gap-4 md:gap-8 grid-cols-1 md:grid-cols-3 bg-green-500 py-4 md:py-8">
     <!-- call us -->
-    <div class="flex justify-center">
+    <div class="flex md:justify-center">
         <div class="flex items-center text-white">
             <img src="{Call}" class="w-8 h-8 m-2 md:m-4"  alt="">
             <div>
                 <p class="font-bold">Call Us: </p>
-                <p>+254 113 873 715</p>
+                <a href="tel:+254 113 873 715">+254 113 873 715</a>
             </div>
         </div>
     </div>
     <!-- Email us -->
-    <div class="flex justify-center">
+    <div class="flex md:justify-center">
         <div class="flex items-center text-white">
             <img src="{Email}" class="w-8 h-8 m-2 md:m-4"  alt="">
             <div>
                 <p class="font-bold">Email Us: </p>
-                <p>knockknock.ke@gmail.com</p>
+                <a href="mailto:knockknock.ke@gmail.com">knockknock.ke@gmail.com</a>
             </div>
         </div>
     </div>
     <!-- follow us -->
-    <div class="flex justify-center">
+    <div class="flex md:justify-center">
         <div class="flex flex-col text-white">
-            <p class="font-bold">Follow Us: </p>
+            <p class="font-bold ml-2 md:ml-4">Follow Us: </p>
             <div class="flex items-center">
                 <img src="{Insta}" class="w-8 h-8 m-2 md:m-4"  alt="">
                 <img src="{Facebook}" class="w-8 h-8 mr-2 md:mr-4"  alt="">
