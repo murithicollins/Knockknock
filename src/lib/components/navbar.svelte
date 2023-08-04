@@ -1,6 +1,7 @@
 
 <script>
   import KnockIcon from '$lib/assets/navbar/long logo.png';
+   
 
   let showMenu = false;
 

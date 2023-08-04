@@ -9,12 +9,12 @@ export { default as Carousel } from './hero/Carousel.svelte';
 export { default as Donatebutton } from './campaign/donatebutton.svelte';
 export { default as Aligner } from './campaign/aligner.svelte';
 export { default as CampaignFooter} from './campaign/footer.svelte'
-export { default as Modal } from './Modal/modal.svelte';
-
-
-export { default as TriggerDonateButton } from './campaign/triggerdonate.svelte';
 
 export { default as VideoModal } from './campaign/videomodal.svelte';
+export { default as Modal } from './Modal/modal.svelte';
+export { default as TriggerDonateButton } from './campaign/triggerdonate.svelte';
+export { default as WhyDoIt } from './campaign/why.svelte';
+
 
 
 
