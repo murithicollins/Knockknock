@@ -3,12 +3,22 @@
   import KnockIcon from '$lib/assets/navbar/long logo.png';
   import {Ruler} from '$lib/components'
 
+
+
+  
+
    
 
   let showMenu = false;
+  let hiddenNav = false;
+
+  function hidden(){
+    hiddenNav = !hiddenNav
+  }
 
   function toggleNavbar() {
     showMenu = !showMenu;
+    
   }
 </script>
 
