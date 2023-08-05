@@ -177,7 +177,7 @@
             <div class="header-col flex items-center justify-center md:pr-24 md:pb-12 col-span-1 md:col-span-3">
                 
                 <div class="w-4/5">
-                    <h1 class="text-2xl md:text-5xl text-white font-bold">
+                    <h1 class="text-2xl mt-20 md:text-5xl text-white font-bold">
                         #tech4good Inclusive bell (i-bell) <br> 30-day campaign
                     </h1>
                     <p class="text-white leading-loose my-5">
