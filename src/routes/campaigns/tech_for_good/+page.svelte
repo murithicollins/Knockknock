@@ -178,9 +178,9 @@
 
     <VideoModal show={video_modal} on:closed={()=>{video_modal=false}}/>
     <div class="md:relative">
-        <div class="grid top-grid grid-cols-1 md:grid-cols-2 ">
+        <div class="grid top-grid grid-cols-1 md:grid-cols-5 ">
 
-            <div class="header-col flex items-center justify-center md:pr-24">
+            <div class="header-col flex items-center justify-center md:pr-24 md:pb-12 col-span-1 md:col-span-3">
                 
                 <div class="w-4/5">
                     <h1 class="text-2xl md:text-5xl text-white font-bold">
@@ -191,12 +191,12 @@
                         Let's join hands and push forward tech innovations for the Deaf! In view of September, Deaf awareness month, i-bell intends to bring an inclusive bell system to Treeside Kasarani School for the Deaf!! We can all be pioneers of inclusive learning by supporting this initiative. 
                     </p>
                     <p class="text-xl mb-5 md:text-2xl text-white font-bold">
-                        Amount we are raising: Ksh. 425, 531.60
+                        Target: Ksh. 425, 531.60
                     </p>    
                 </div>
             </div>
     
-            <div class="relative header-col-2" >
+            <div class="relative header-col-2 col-span-1 md:col-span-2" >
                 <div class="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
                     <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
                 </div>
