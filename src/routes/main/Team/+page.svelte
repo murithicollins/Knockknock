@@ -1,20 +1,31 @@
 <script>
     import {Ruler} from '$lib/components';
+    import 'aos/dist/aos.css';
     // importing images
     import KnockTeam from '$lib/assets/team/knock team.png';
     import EstherImg from '$lib/assets/team/Esther.jpg';
     import BrianImg from '$lib/assets/team/Brian.jpg';
     import JoeImg from '$lib/assets/team/joe.jpg';
     import DennisImg from '$lib/assets/team/Dennis.png';
+    import LinkedImg from '$lib/assets/team/LinkedImg.png';
+
+
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        AOS.init()
+    })
 </script>
 
 <Ruler>
   <main>
     <!-- about section -->
-    <div class="flex justify-center item-center">
+    <div class="flex justify-center item-center pt-10">
       <div class="flex flex-col md:flex-row justify-center gap-10 shadow-xl bg-[#D9D9D9] p-4 md:p-10 md:py-4 md:px-14">
         <div class="">
-          <img src={KnockTeam} class="rounded-r-3xl " alt="" height="500" width="1000"/>
+          <img src={KnockTeam} class="rounded md:rounded-r-3xl " alt="" height="500" width="1000"/>
         </div>
         <div class="flex justify-center  w-full md:w-3/5 p-2 md:p-10">
           <div>
@@ -30,46 +41,50 @@
     </div>
     
     
-    <div class="container my-24 px-6 mx-auto">
+    <div class="container my-24 px-6 mx-auto animate-ease-in-sine" data-aos="fade-up">
       <!-- Section: Design Block -->
       <section class="mb-32 text-gray-800 text-center">
-        <h2 class="text-2xl font-primary text-[#EF6C00] font-bold mb-8">
+        <h2 class="text-2xl font-primary text-[#EF6C00]  font-bold mb-8">
           Team
         </h2>
-        <div class="grid gap-x-2  md:grid-cols-4">
-          <div class="flex gap-10 relative mb-24 md:mb-0">
-            <div class=" flex justify-center">
-              <div class="flex justify-center" style="">
-                <img src={EstherImg} class="mx-auto shadow-lg" alt=""
-                  style="" />
-              </div>
+        <div class="grid gap-x-2  md:grid-cols-4 container h-5/6 space-y-4 md:space-y-0">
+          <!-- esther -->
+          <div class="">
+            <div class="" style="">
+              <img src={EstherImg} class="mx-auto shadow-lg object-cover h-96 w-96" alt=""
+                style="" />
             </div>
-            <div class="justify-center">
-              <div class="shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24   bg-white">
-                <div class="w-full h-2 bg-[#00394F]"></div>
+            <div class="flex flex-col justify-center mx-auto w-5/6 -mt-8 relative z-5 shadow-md hover:transform hover:-translate-y-1" >
+              <div class="bg-white">
+                <div class="w-full h-2 bg-[#00394F] "></div>
                 <div class="flex justify-center">
                   <div class="">
                     <h5 class="text-lg font-bold mt-2">Esther Mueni</h5>
                     <p class="text-24">Team Lead</p>
                   </div>
                 </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/esther-mueni-919012196/">
-                    <button class=" bg-[#EF6C00] text-white p-2 w-full rounded-md">Linked In</button>
-                  </a>
-                </div>
-              </div>
+                <div class="bg-[#EF6C00] hover:bg-[#00394F] text-white p-2 w-full rounded-md flex justify-center ">
+                  <div class="p-2">
+                    <img src={LinkedImg} class="h-4 " alt="">
+                  </div>
+                  <div class="p-1">
+                    <a href="https://www.linkedin.com/in/esther-mueni-919012196/">
+                      <button class=" ">Linked In</button>
+                    </a>
+                  </div>
+                </div>              </div>
             </div>
+
           </div>
-          <div class="flex gap-10 relative mb-24 md:mb-0">
-            <div class=" flex justify-center">
-              <div class="flex justify-center" style="">
-                <img src={BrianImg} class="mx-auto shadow-lg" alt=""
-                  style="" />
-              </div>
+
+          <!-- brain -->
+          <div class="">
+            <div class="" style="">
+              <img src={BrianImg} class="mx-auto shadow-lg object-cover h-96 w-96" alt=""
+                style="" />
             </div>
-            <div class="flex justify-center">
-              <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="flex flex-col justify-center mx-auto w-5/6 -mt-8 relative z-5 shadow-md hover:transform hover:-translate-y-1" >
+              <div class="bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">
@@ -77,23 +92,29 @@
                     <p class="text-24">Technical Lead</p>
                   </div>
                 </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/brian-olasya/">
-                    <button class=" bg-[#EF6C00] text-white p-2 w-full rounded-md">Linked In</button>
-                  </a>
+                <div class="bg-[#EF6C00] hover:bg-[#00394F] text-white p-2 w-full rounded-md flex justify-center ">
+                  <div class="p-2">
+                    <img src={LinkedImg} class="h-4 " alt="">
+                  </div>
+                  <div class="p-1">
+                    <a href="https://www.linkedin.com/in/brian-olasya/">
+                      <button class=" ">Linked In</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
-          <div class="flex gap-10 relative mb-24 md:mb-0">
-            <div class=" flex justify-center">
-              <div class="flex justify-center" style="">
-                <img src={JoeImg} class="mx-auto shadow-lg" alt=""
-                  style="" />
-              </div>
+
+          <!-- joe -->
+          <div class="">
+            <div class="" style="">
+              <img src={JoeImg} class="mx-auto shadow-lg object-cover h-96 w-96" alt=""
+                style="" />
             </div>
-            <div class="flex justify-center">
-              <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="flex flex-col justify-center mx-auto w-5/6 -mt-8 relative z-5 shadow-md hover:transform hover:-translate-y-1" >
+              <div class="bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">
@@ -101,40 +122,51 @@
                     <p class="text-24">Operations Lead</p>
                   </div>
                 </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/ngatiamwaniki/">
-                    <button class=" bg-[#EF6C00] text-white p-2 w-full rounded-md">Linked In</button>
-                  </a>
+                <div class="bg-[#EF6C00] hover:bg-[#00394F] text-white p-2 w-full rounded-md flex justify-center ">
+                  <div class="p-2">
+                    <img src={LinkedImg} class="h-4 " alt="">
+                  </div>
+                  <div class="p-1">
+                    <a href="https://www.linkedin.com/in/ngatiamwaniki/">
+                      <button class=" ">Linked In</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
-          <div class="flex gap-10 relative mb-24 md:mb-0">
-            <div class=" flex justify-center">
-              <div class="flex justify-center w-full" style="">
-                <img src={DennisImg} class="mx-auto  shadow-lg object-cover" alt=""
-                  style="" />
-              </div>
+
+          <!-- dennis -->
+          <div class="">
+            <div class="" style="">
+              <img src={DennisImg} class="mx-auto shadow-lg  object-cover h-96 w-96"  alt=""
+                style="" />
             </div>
-            <div class="flex justify-center">
-              <div class="rounded-lg shadow-lg absolute top-3/4 mt-20 inset-x-6 md:inset-x-2 w-60 h-24 block bg-white">
+            <div class="flex flex-col justify-center mx-auto w-5/6 -mt-8 relative z-5 shadow-md hover:transform hover:-translate-y-1" >
+              <div class="bg-white">
                 <div class="w-full h-2 bg-[#00394F]"></div>
                 <div class="flex justify-center">
                   <div class="">
-                    <h5 class="text-lg font-bold mt-2">Dennis Kariuki </h5>
+                    <h5 class="text-lg font-bold mt-2">Dennis Kariuki</h5>
                     <p class="text-24">Software engineer</p>
                   </div>
                 </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/dennis-kariuki-a6800b126/">
-                    <button class=" bg-[#EF6C00] text-white p-2 w-full rounded-md">Linked In</button>
-                  </a>
+                <div class="bg-[#EF6C00] hover:bg-[#00394F] text-white p-2 w-full rounded-md flex justify-center ">
+                  <div class="p-2">
+                    <img src={LinkedImg} class="h-4 " alt="">
+                  </div>
+                  <div class="p-1">
+                    <a href="https://www.linkedin.com/in/dennis-kariuki-a6800b126/">
+                      <button class=" ">Linked In</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
-    
       </section>
     </div>
   </main>
@@ -153,6 +185,15 @@
 .font-tertiary {
       font-family: "Museo Slab", serif;
     }
+
+@keyframes ease-in-sine {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 
 </style>
 

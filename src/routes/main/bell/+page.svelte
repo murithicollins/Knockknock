@@ -24,7 +24,7 @@
                 <!-- the problem -->
                 <div class="w-full md:w-1/2 p-4 md:p-10 my-4 md:my-10">
                     <h1 class="flex items-center justify-center font-primary text-xl font-bold text-[#EF6C00] mb-10">The problem</h1>
-                    <p class=" font-secondary text-24 text-[#00394F]">The school bell system i impolrtant in creating  wel-organize structure for smooth running of activities in a school. It is used to announce critical times in the school, create routine, and to get attention 
+                    <p class=" text-[#00394F] text-sm md:text-24 font-secondary">The school bell system i impolrtant in creating  wel-organize structure for smooth running of activities in a school. It is used to announce critical times in the school, create routine, and to get attention 
                         in cases of emergencies. Most schools for the Deaf in Kenya use the ‘conventional’ 
                         sound based bell system which is ineffective because a majority of the students are Deaf. This implies the system is ineffective which could lead to - lack of respect for time, excuses for lateness, anda  decline in teaching quality.
                     </p>
@@ -32,7 +32,7 @@
                 <!-- about -->
                 <div class="w-full md:w-1/2 p-4 md:p-10 my-4 md:my-10">
                     <h1 class="flex justify-center font-primary text-2xl font-bold text-[#EF6C00] mb-10">About i-bell:</h1>
-                    <p class=" font-secondary text-24 text-[#00394F]">
+                    <p class=" text-[#00394F] text-sm md:text-24 font-secondary">
                         I-bell is a bell system that provides visual and sound alerts to capture attention of both hearing and Deaf students and staff within schools for the Deaf.
     
                         The system capializes on the existing Deaf culture of using flickering of lights as a way to call attention.   
@@ -60,35 +60,35 @@
                         <h1 class="font-primary text-2xl font-bold text-[#EF6C00]">Our Strategy</h1>
                     </div>
                     <!-- context -->
-                    <div class="p-4 font-secondary text-center text-24 text-[#00394F] mb-4">
+                    <div class="p-4 text-[#00394F] text-sm md:text-24 font-secondary  text-center   mb-4 ">
                     <p>Our intention is to implement i-bell to all schools for the Deaf and integrated schools in Kenya as we move to those across Africa. How we can partner :  </p> 
                     </div>
                     <div class="flex justify-end item">
                         <div class="p-2 md:p-10 space-y-10">
     
                             <div class="flex  flex-col md:flex-row gap-4">
-                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/6">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-2/6">
                                     ✓ Implementation partners: 
                                 </p>
-                                <p class="font-secondary font-normal text-24 text-[#00394F] w-5/6">  
+                                <p class="text-[#00394F] text-sm md:text-24 font-secondary w-5/6">  
                                     we work with organizations and institutions who support us in installing i-bell to one or several schools for the Deaf in kenya
                                 </p> 
                             </div>
                             <div class="flex  flex-col md:flex-row gap-4">
-                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-1/6">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F] md:w-2/6">
                                     ✓ Operational partner:  
                                 </p>
-                                <p class="font-secondary font-normal text-24 text-[#00394F] w-5/6">  
+                                <p class="text-[#00394F] text-sm md:text-24 font-secondary w-5/6">  
                                     we work with organizations to subsidize production and operation costs
                                     by exploring existing networks. Such includes support in manufacturing, production, and support by providing us with working space to expand and scale the project.
                                 </p> 
                             </div>
         
                             <div class="flex  flex-col md:flex-row gap-4">
-                                <p class="font-secondary font-bold  text-24 text-[#00394F]  md:w-1/6  ">
+                                <p class="font-secondary font-bold  text-24 text-[#00394F]  md:w-2/6  ">
                                     ✓ Strategic partner: 
                                 </p>
-                                <p class=" font-secondary font-normal text-24 text-[#00394F] w-5/6 ">  
+                                <p class=" text-[#00394F] text-sm md:text-24 font-secondary w-5/6 ">  
                                     We work on dynamic partnerships with organizatiosn that share the saeme vision of helping students with learning loss. The partnership is dynamic 
                                     depending on what support the organization can provide.
                                 </p> 
