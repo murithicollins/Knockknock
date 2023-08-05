@@ -63,3 +63,6 @@ npm publish
 
 
 scp -r package.json build neverest@143.42.109.187:/home/neverest/knockknock
+
+
+pm2 restart all
