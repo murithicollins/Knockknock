@@ -233,10 +233,10 @@
             </Aligner>
         </div>
     </div> 
-    <div class="">
+    <div class="md:mt-28">
         <Aligner>
             <div class="">
-                <h1 class="text-2xl my-4 md:my-12 md:text-5xl font-bold text-[#393D5C] text-center">
+                <h1 class="text-2xl my-4 md:my-12 md:text-5xl  font-bold text-[#393D5C] text-center">
                     Your Support is Highly appreciated.
                 </h1>
                 <p class="text-center my-4 md:my-12">
@@ -299,7 +299,7 @@
     <div>
         <Aligner>
             <div class="grid grid-cols-1 md:grid-cols-6">
-                <div class="w-full col-span-1 md:col-span-4 md:border-r-2 md:pr-6 border-dashed border-green-500 py-8" >
+                <div class="w-full col-span-1 md:col-span-4 md:pr-6 border-dashed border-green-500 py-8" >
                     <div>
                         <h1 class="text-2xl md:text-5xl font-bold text-[#393D5C]">
                             Why are we Doing This ? 
@@ -323,7 +323,7 @@
                         
                     </div>
                 </div>
-                <div class="flex col-span-1 md:col-span-2 justify-center  md:py-8">
+                <div class="flex col-span-1 md:col-span-2 justify-center items-center  md:py-8">
                     <div class="relative w-80 h-80 md:w-96 md:h-96">
                     
                         <div class="absolute right-0 flex items-center justify-center">
