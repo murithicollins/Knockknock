@@ -49,6 +49,7 @@
     "@fontsource-variable/quicksand": "^5.0.3",
     "@supabase/auth-helpers-sveltekit": "^0.10.1",
     "@supabase/supabase-js": "^2.31.0",
+    "aos": "^2.3.4",
     "flowbite": "^1.6.5",
     "html2canvas": "^1.4.1",
     "nodemailer": "^6.9.3",

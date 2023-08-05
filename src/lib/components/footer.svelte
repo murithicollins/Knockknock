@@ -76,9 +76,9 @@ function handleSubscribeClick() {
                     <div class="text-[#00394f] text-xl my-4 underline">
                         <ul class="flex gap-4 text-sm md:gap-12 p-2 font-primary">
                             <li><a href="/" class="">Home</a></li>
-                            <li><a href="/Product"class="">Product</a></li>
-                            <li><a href="/Team" class="" >Team</a></li>
-                            <li><a href="/Contactus" class="">Contact</a></li>
+                            <li><a href="/main/Product"class="">Product</a></li>
+                            <li><a href="/main/Team" class="" >Team</a></li>
+                            <li><a href="/main/Contact_us" class="">Contact</a></li>
                         </ul>
                     </div>
                     <!-- social img -->
