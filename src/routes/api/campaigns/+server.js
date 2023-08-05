@@ -65,7 +65,7 @@ export async function POST({ locals: { supabase }, request }) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Apikey': '00tfPtPGvvT'
+                'Apikey': '4zDDqSO1x1e'
             },
             body: JSON.stringify({
                 amount: donation.amount,

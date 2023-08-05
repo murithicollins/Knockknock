@@ -2,8 +2,6 @@
     import PlayBtn from '$lib/assets/play.png';
     import SchoolImg from '$lib/assets/school.png';
     import KnockImg from '$lib/assets/why.png';
-    import TawaLogo  from '$lib/assets/tawa.png';
-    import TinyLogo from '$lib/assets/tiny.png';
     import BgSvg from '$lib/assets/curve_bg.svg';
 
     import School1 from '$lib/assets/school/school1.jpeg';
@@ -11,7 +9,7 @@
     import School3 from '$lib/assets/school/school3.jpeg';
 
 
-    import {Donatebutton,WhyDoIt, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
+    import {Donatebutton,WhyDoIt,Partners, Aligner,CampaignFooter,Modal,TriggerDonateButton,VideoModal} from '$lib/components';
     import { onMount } from 'svelte';
     import { get } from 'svelte/store';
   
@@ -21,10 +19,6 @@
         showModal=!showModal;
     }
     
-
-
-    // let showModal=false;
-    // const openModal = () => {
     export let active_donation;
     let donate_form = {
         amount:"",
@@ -382,8 +376,11 @@
 
     </div>
 
-    <div class="text-center m-4 md:m-8 lg:m-16">
-        <div class="space-y-8 my-8">
+    <div class="text-center mt-4 md:mt-8 lg:mt-16">
+
+        <Aligner>  
+
+        <div class=" my-8">
             <h1 class="text-5xl font-bold text-[#393D5C] mt-40 md:mt-0">
                 Our Partners
             </h1>
@@ -391,15 +388,11 @@
                 This are among the groups and friends that have supported us through the <br> journey. 
             </p>
 
+            <Partners/>
+
         </div>
-        <div class="flex justify-center gap-32">
-            <div>
-                <img src={TawaLogo} alt="">
-            </div>
-            <div>
-                <img src={TinyLogo} alt="">
-            </div>
-        </div>
+        </Aligner>
+        
     </div>
 
     <CampaignFooter/>

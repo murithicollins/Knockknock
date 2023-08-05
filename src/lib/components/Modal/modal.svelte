@@ -73,7 +73,7 @@
             </div>
 
             <h1 class="text-white text-center my-4 font-bold">
-              I have proudly made a <br> donation to I-bell
+              I proudly support tech4good i-bell campaign
             </h1>
 
           </div>
