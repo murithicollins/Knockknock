@@ -204,7 +204,7 @@
     
         </div>
     
-        <div class=" w-full pb-4 md:-mb-16 md:absolute bottom-1">
+        <div class=" w-full pb-4 md:-mb-28 md:absolute bottom-1">
             <Aligner>
                 <div class=" py-5 bg-white  z-10 shadow-lg rounded-lg p-4">
 
@@ -298,8 +298,8 @@
     </div>   
     <div>
         <Aligner>
-            <div class="md:flex  justify-between md:py-20  ">
-                <div class="space-y-8 w-full md:w-3/4 py-8" >
+            <div class="grid grid-cols-1 md:grid-cols-6">
+                <div class="w-full col-span-1 md:col-span-4 md:border-r-2 md:pr-6 border-dashed border-green-500 py-8" >
                     <div>
                         <h1 class="text-2xl md:text-5xl font-bold text-[#393D5C]">
                             Why are we Doing This ? 
@@ -323,19 +323,23 @@
                         
                     </div>
                 </div>
-                <div class="relative my-8">
-                    <div>
-                        <img src={KnockImg} alt="">
+                <div class="flex col-span-1 md:col-span-2 justify-center  md:py-8">
+                    <div class="relative w-80 h-80 md:w-96 md:h-96">
+                    
+                        <div class="absolute right-0 flex items-center justify-center">
+                            <div class="relative">
+                                <img src={KnockImg} class="w-60 h-60 md:w-80 md:h-80" alt="">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <div class="absolute md:top-60 bottom-0">
+                            <img src={School3} class="w-40 h-40 md:w-52 md:h-52 object-cover rounded-lg" alt="">
+                        </div>
+    
                     </div>
-                    <div class="absolute  top-60 -ml-10 md:-ml-20">
-                        <img src={SchoolImg} alt="">
-                    </div>
-
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <img class="w-12 h-12" src={PlayBtn} on:click={()=>{video_modal=true}}>
-
-                    </div>
-
                 </div>
             </div>
         </Aligner> 
