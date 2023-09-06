@@ -35,10 +35,9 @@ function handleSubscribeClick() {
   }
 
   let socials = [
-    {img: LinkedIn, alt: 'linkedin'},
-    {img: Twitter, alt: 'twitter'},
-    {img: YouTube, alt: 'youtube'},
-    {img: InstaGram, alt: 'instagram'},
+    {img: LinkedIn, alt: 'linkedin', link: 'https://www.linkedin.com/company/knockknockke/'},
+    {img: Twitter, alt: 'twitter', link: 'https://twitter.com/Knockknockke'},
+    {img: YouTube, alt: 'youtube', link: 'https://www.youtube.com/watch?v=twPf3IgtuMg'},
   ]
 
 
@@ -85,7 +84,7 @@ function handleSubscribeClick() {
                     <div class="flex gap-4 md:gap-8">
 
                         {#each socials as social}
-                            <img src={social.img} alt={social.alt} class="h-8 md:h-8">
+                            <a href="{social.link}"> <img src={social.img} alt={social.alt} class="h-8 md:h-8"> </a> 
                         {/each}
                         
                     </div>

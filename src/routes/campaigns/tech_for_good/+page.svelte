@@ -207,16 +207,14 @@
                         <div class="bg-green-500 rounded-full py-1" style="width:{campaign_progress}%"></div>
                     </div>
     
-                    <div class="grid grid-cols-1 md:grid-cols-4 text-green-500">
+                    <div class="grid grid-cols-1 md:grid-cols-3 text-green-500">
                         <div class="py-1">
                             <h1 class="text-lg font-bold">Ksh {campaign_data.total_donated} Raised</h1>
                         </div>
                         <div class="py-1">
                             <h1 class="text-lg font-bold">{campaign_data.total_transactions} Donations</h1>
                         </div>
-                        <div class="py-1">
-                            <h1 class="text-lg font-bold">{days_remaining} Days left</h1>
-                        </div>
+                    
                         <div class="py-1">
                             <h1 class="text-lg font-bold">Goal Ksh {fomated_target}</h1>
                         </div>

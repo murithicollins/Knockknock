@@ -3,6 +3,7 @@
     import Insta from '$lib/assets/icons/insta.svg';
     import Twitter from '$lib/assets/icons/twitter.png';
     import Facebook from '$lib/assets/icons/facebook.svg';
+    import linkedin from '$lib/assets/icons/linkedin.svg';
     import Email from '$lib/assets/icons/email.svg';
     import Call from '$lib/assets/icons/call.svg';
 
@@ -35,9 +36,8 @@
         <div class="flex flex-col text-white">
             <p class="font-bold ml-2 md:ml-4">Follow Us: </p>
             <div class="flex items-center">
-                <img src="{Insta}" class="w-8 h-8 m-2 md:m-4"  alt="">
-                <img src="{Facebook}" class="w-8 h-8 mr-2 md:mr-4"  alt="">
-                <img src="{Twitter}" class="w-8 h-8 m-2 md:m-4"  alt="">
+                <a href="https://www.linkedin.com/company/knocknockke/"><img src="{linkedin}" class="w-8 h-8 m-2 md:m-4"  alt=""></a>
+                <a href="https://twitter.com/Knockknockke"><img src="{Twitter}" class="w-8 h-8 m-2 md:m-4"  alt=""></a>
             </div>
         </div>
     </div>

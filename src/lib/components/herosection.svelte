@@ -54,6 +54,11 @@
                 >
                 <div class="text-xs font-tertiary font-bold  text-white  bg-[#00394F] p-4 rounded-full">Work with Us</div>
             </button>
+            <button class="my-4" >
+              <div class="text-xs font-tertiary font-bold  text-white  bg-[#05b12d] p-4 rounded-full">
+                <a href="https://knockknock.co.ke/campaigns/tech_for_good" target="_blank">#Tech4good</a>
+              </div>
+          </button>
           </div>
         </div>
       </div>
@@ -64,7 +69,7 @@
             <iframe class="rounded-lg" width="100" height="70" src="https://www.youtube.com/embed/_NDC_-Tdd5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
           <div class="mx-2 md:ml-5">
-            <h1 class="font-bold text-sm">Featured on Eburu TV</h1>
+            <h1 class="font-bold text-sm">Featured on Ebru TV</h1>
             <p class="my-2 text-xs">
               Watch how we are changing lives of people with hearing loss
             </p>

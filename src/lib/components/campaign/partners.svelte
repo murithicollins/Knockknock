@@ -4,30 +4,40 @@
     import TinyLogo from '$lib/assets/tiny.png';
     import Startinev from '$lib/assets/startinev.png';
     import Galium from '$lib/assets/galium.jpeg';
+    import crystal from '$lib/assets/crystal.png';
+
+    
+
+    
 
 
     let partners = [
         {
             name: "Tawa",
             logo: TawaLogo,
-            link: "https://tawa.com.br/"
+            link: "https://pnpradius.com/"
         },
         {
             name: "Tiny",
             logo: TinyLogo,
-            link: "https://tiny.com.br/"
+            link: "https://v2.tinypesa.com/"
         },
 
         {
             name: "Startinev",
             logo: Startinev,
-            link: "https://tiny.com.br/"
+            link: "https://startinev.com/"
         },
 
         {
             name: "Galium",
             logo: Galium,
-            link: "https://tiny.com.br/"
+            link: "https://642be671313fb.site123.me/"
+        },
+        {
+            name: "Crystal Hearts Foundation Ke",
+            logo: crystal,
+            link: "https://twitter.com/CrystalHeartsKe"
         }
     ]
     
